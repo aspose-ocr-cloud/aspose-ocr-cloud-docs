@@ -22,13 +22,13 @@ Before you start:
 1. Click **Next**, **Next**, **Next** and **Next**.
 1. Click **Finish**.
 ### **Application UI**
-In **Project Explorer** double click *res/layout/activity\_main.xml*. *activity\_main.xml* is the UI of our application. Right-click it and select **Change Layout** option. Choose **LinearLayout (Vertical)** from the list and click **OK**. From the **Palette** drag a **Button** and a **TextView** to the white background area. Adjust their width, height and position using mouse as shown in the following screenshot:
+In **Project Explorer** double click *res/layout/activity_main.xml*. *activity_main.xml* is the UI of our application. Right-click it and select **Change Layout** option. Choose **LinearLayout (Vertical)** from the list and click **OK**. From the **Palette** drag a **Button** and a **TextView** to the white background area. Adjust their width, height and position using mouse as shown in the following screenshot:
 
-![todo:image\_alt\_text](recognize-text-in-photos-on-android-device_1.png)
+![todo:image_alt_text](recognize-text-in-photos-on-android-device_1.png)
 
-We want to access the *TextView* within our code, so we must add some identifier for it. Right-click the newly added *TextView*, click **Edit ID**, Enter *text\_results* and click **OK**. Now we can access it using R.id.text\_results. Go to **Properties** window and clear the property named **Text**. We want to keep our result view blank. Switch to XML view of *activity\_main.xml* and add textIsSelectable attribute to *TextView* element.
+We want to access the *TextView* within our code, so we must add some identifier for it. Right-click the newly added *TextView*, click **Edit ID**, Enter *text_results* and click **OK**. Now we can access it using R.id.text_results. Go to **Properties** window and clear the property named **Text**. We want to keep our result view blank. Switch to XML view of *activity_main.xml* and add textIsSelectable attribute to *TextView* element.
 
-**activity\_main.xml**
+**activity_main.xml**
 
 ```xml
 
@@ -38,7 +38,7 @@ We want to access the *TextView* within our code, so we must add some identifier
 
   <TextView
 
-    android:id="@+id/text\_results"
+    android:id="@+id/text_results"
 
     ...
 
@@ -68,13 +68,13 @@ Our application will use some features provided by the system, that is the camer
 
           android:required="true" />
 
-  <uses-permission android:name="android.permission.WRITE\_EXTERNAL\_STORAGE"
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
 
           android:maxSdkVersion="18" />
 
   <uses-permission android:name="android.permission.INTERNET" />
 
-  <uses-permission android:name="android.permission.ACCESS\_NETWORK\_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
   ...
 
@@ -111,7 +111,7 @@ public class MainActivity extends ActionBarActivity {
 
 ```
 
-To capture an image using camera we use camera intent MediaStore.ACTION\_IMAGE\_CAPTURE with MediaStore.EXTRA\_OUTPUT as intent extras. When MediaStore.EXTRA\_OUTPUT is specified the camera intent will save the captured image at our desired location for us.
+To capture an image using camera we use camera intent MediaStore.ACTION_IMAGE_CAPTURE with MediaStore.EXTRA_OUTPUT as intent extras. When MediaStore.EXTRA_OUTPUT is specified the camera intent will save the captured image at our desired location for us.
 
 We need two more things to handle the request-result process i.e. a request identifier and a temporary file where we shall keep the captured image. Let's update our code accordingly and implement the camera feature.
 
@@ -123,13 +123,13 @@ public class MainActivity extends ActionBarActivity {
 
   // ...
 
-  protected static final int REQUEST\_IMAGE\_CAPTURE = 1;
+  protected static final int REQUEST_IMAGE_CAPTURE = 1;
 
   File tmpfile;
 
   public void captureImage(View view) {
 
-    Intent i = new Intent(MediaStore.ACTION\_IMAGE\_CAPTURE);
+    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
     if (i.resolveActivity(getPackageManager()) != null) {
 
@@ -137,7 +137,7 @@ public class MainActivity extends ActionBarActivity {
 
       tmpfile = File.createTempFile("Photo", ".jpg",
 
-          Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY\_PICTURES));
+          Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES));
 
     } catch (IOException x) {
 
@@ -147,9 +147,9 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    i.putExtra(MediaStore.EXTRA\_OUTPUT, Uri.fromFile(tmpfile));
+    i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(tmpfile));
 
-    startActivityForResult(i, REQUEST\_IMAGE\_CAPTURE);
+    startActivityForResult(i, REQUEST_IMAGE_CAPTURE);
 
     }
 
@@ -177,7 +177,7 @@ public class MainActivity extends ActionBarActivity {
 
   protected void onActivityResult(int request, int result, Intent data) {
 
-    if (request == REQUEST\_IMAGE\_CAPTURE && result == RESULT\_OK) {
+    if (request == REQUEST_IMAGE_CAPTURE && result == RESULT_OK) {
 
       if (tmpfile == null) {
 
@@ -201,7 +201,7 @@ public class MainActivity extends ActionBarActivity {
 
 ```
 
-Here in onActivityResult we have used REQUEST\_IMAGE\_CAPTURE and tmpfile from captureImage. We also have used OcrTask and displayTextResults, which are our next topic.
+Here in onActivityResult we have used REQUEST_IMAGE_CAPTURE and tmpfile from captureImage. We also have used OcrTask and displayTextResults, which are our next topic.
 
 OcrTask is a subclass of AsyncTask, which is Android's standard method of performing short duration asynchronous background tasks. As network operation like REST API calls can be delayed sometimes due to network interruptions, so it is forbidden to perform them in main thread on Android platform. We must use AsyncTask to call Aspose for Cloud APIs. Let us add the class to our program and explain each part in detail.
 
@@ -277,7 +277,7 @@ protected void onPreExecute() {
 
     mac.update(requestUrl.getBytes());
 
-    String signature = Base64.encodeToString(mac.doFinal(), Base64.NO\_PADDING);
+    String signature = Base64.encodeToString(mac.doFinal(), Base64.NO_PADDING);
 
     requestUrl += "&signature=" + signature;
 
@@ -411,7 +411,7 @@ protected void onPostExecute(String result) {
 
 ```
 
-Now comes the simplest and yet important part of our application i.e. display the recognized text results. We simply change the text property of TextView that we added to our UI in the beginning. We added the id text\_results and also said that we can reference it from code using R.id.text\_results. Here we go:
+Now comes the simplest and yet important part of our application i.e. display the recognized text results. We simply change the text property of TextView that we added to our UI in the beginning. We added the id text_results and also said that we can reference it from code using R.id.text_results. Here we go:
 
 **MainActivity.java**
 
@@ -423,7 +423,7 @@ public class MainActivity extends ActionBarActivity {
 
   public void displayTextResults(String text) {
 
-    TextView t = (TextView) findViewById(R.id.text\_results);
+    TextView t = (TextView) findViewById(R.id.text_results);
 
     t.setText(text);
 

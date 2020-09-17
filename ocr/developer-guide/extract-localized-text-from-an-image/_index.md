@@ -21,7 +21,7 @@ The language parameter accepts integer value:
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/ocr/de\_1.jpg/recognize?language=2" \
+curl -v "https://api.aspose.cloud/v3.0/ocr/de_1.jpg/recognize?language=2" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json"\

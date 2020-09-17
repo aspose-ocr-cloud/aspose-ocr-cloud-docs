@@ -20,7 +20,7 @@ Aspose.OCR Cloud provided an API to recognize and extract OCR text from raster i
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/ocr/sample\_ocr.png/recognize" \
+curl -v "https://api.aspose.cloud/v3.0/ocr/sample_ocr.png/recognize" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json"\

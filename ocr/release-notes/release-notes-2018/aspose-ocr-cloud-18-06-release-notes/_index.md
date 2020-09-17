@@ -17,4 +17,4 @@ The page contains release notes for Aspose.OCR Cloud update 18.6 – [API Refer
    1. Fix issue of collapsing words
    1. Fix issue of duplicate letters
    1. Fix issues with punctuation symbols
-   1. Learn to recognise characters: hyphen-minus (-), dash (–), grave accent (`), underscore (\_), slashes (/)(\)
+   1. Learn to recognise characters: hyphen-minus (-), dash (–), grave accent (`), underscore (_), slashes (/)(\)

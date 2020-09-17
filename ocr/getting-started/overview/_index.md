@@ -7,7 +7,7 @@ weight: 10
 
 {{% alert color="primary" %}} 
 
-![todo:image\_alt\_text](overview_1.png)
+![todo:image_alt_text](overview_1.png)
 
 Aspose.OCR Cloud is a REST API for optical character recognition and documents scanning in the cloud. It supports reading and recognizing characters from BMP and TIFF image formats. Optical character recognition can be performed either on a whole image or partial image. If the required characters are all over the image then scanning the whole image is better option. If you want to scan partial image then specify a rectangular area containing the characters. Aspose.OCR Cloud API allows passing X and Y coordinates from where the rectangle is supposed to be started as well as its width and height. Once the character recognition operation is initiated within specified rectangular area - The cloud OCR API will read the characters and font information from that area and return the response in XML or JSON format with the below image scanning attributes:
 

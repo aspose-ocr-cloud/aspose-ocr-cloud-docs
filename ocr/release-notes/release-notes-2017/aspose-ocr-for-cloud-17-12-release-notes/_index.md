@@ -19,14 +19,14 @@ Advantages of this algorithm:
 - Excellent recognition results. Mean recognition quality is greater than 97% on text-only samples
 - It is based on modern, perspective, scalable cloud architecture
 
-This is the latest version but not yet perfect. It is based on the cutting edge neural networks algorithms, distributed computing and scalable cloud architecture. Unfortunately, it can't do the skew correction and document structure recognition tasks now (until the next release), but provides good results on only-text images, up to 97,7% [1 - ([Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance) / Text\_Length)]. It's a bit faster than V2 and will be much faster in future.
+This is the latest version but not yet perfect. It is based on the cutting edge neural networks algorithms, distributed computing and scalable cloud architecture. Unfortunately, it can't do the skew correction and document structure recognition tasks now (until the next release), but provides good results on only-text images, up to 97,7% [1 - ([Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance) / Text_Length)]. It's a bit faster than V2 and will be much faster in future.
 ## **Specification for functions to work with new algorithm**
 #### **1. Recognize image using Aspose.Cloud storage**
 **REST**
 
 ```plain
 
-/ocr/ocrv3/{name}/recognize\_v3/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}
+/ocr/ocrv3/{name}/recognize_v3/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}
 
 ```
 
@@ -60,7 +60,7 @@ public OCRResponse GetRecognizeDocument(string name, string storage, string fold
 
 StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH);
 
-// Instantiate Aspose OCR for Cloud API SDK Version\_3
+// Instantiate Aspose OCR for Cloud API SDK Version_3
 
 OcrV2Api target = new OcrV3Api(APIKEY, APPSID, BASEPATH);
 
@@ -170,7 +170,7 @@ public OCRResponse PostOcrFromUrlOrContent(string url, byte[] file)
 
 ```java
 
-// Instantiate Aspose OCR for Cloud API SDK Version\_3
+// Instantiate Aspose OCR for Cloud API SDK Version_3
 
 OcrV2Api target = new OcrV3Api(APIKEY, APPSID, BASEPATH);
 
