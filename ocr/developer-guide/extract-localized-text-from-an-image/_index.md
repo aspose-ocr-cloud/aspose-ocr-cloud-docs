@@ -49,7 +49,7 @@ curl -v "https://api.aspose.cloud/v3.0/ocr/de_1.jpg/recognize?language=2" \
 
 {{< /tabs >}}
 ## **SDKs**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-ocr-cloud) for a complete list of Aspose.OCR Cloud SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/available-sdks/) article to learn how to add an SDK to your project.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-ocr-cloud) for a complete list of Aspose.OCR Cloud SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/ocr/available-sdks/) article to learn how to add an SDK to your project.
 ## **SDK Examples**
 **Extract Localized Text from an Image**
 
