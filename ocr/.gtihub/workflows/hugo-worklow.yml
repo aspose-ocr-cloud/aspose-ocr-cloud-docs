@@ -1,0 +1,15 @@
+name: Hugo-CI
+on:
+  push:
+    branches: [develop]
+    paths-ignore: ".github/**"
+
+jobs:
+  job-one:
+    name: Deploy
+    runs-on: [self-hosted, linux, x64, dev4-ocr-cloud]
+    steps:
+      - name: hugo build
+        run: |
+          cd aspose-ocr-cloud-docs
+          https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-docs.git || (cd aspose-ocr-cloud-docs && git pull)
