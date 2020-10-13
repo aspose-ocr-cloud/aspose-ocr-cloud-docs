@@ -5,4 +5,4 @@ url: /
 weight: 10
 ---
 
-### Aspose.OCR Cloud.
+### Aspose.OCR Cloud..
