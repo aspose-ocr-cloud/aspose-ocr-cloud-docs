@@ -6,14 +6,19 @@ weight: 20
 ---
 
 ## **Introduction**
-Optical character recognition can be performed either on a whole image or on a specific portion of the image. If the required characters are all over the image then scanning the whole image is a better option. If you want to scan partial image then specify a rectangular area containing the characters. Aspose.OCR Cloud API allows passing X and Y coordinates from where the rectangle is supposed to be started as well as its width and height. Once the character recognition operation is initiated within a specified rectangular area - The cloud OCR API will read the characters and font information from that area and return the response in XML or JSON format.
+
+Optical character recognition can be performed either on a whole image or on a specific portion of the image. If the required characters are all over the image then scanning the whole image is a better option. If you want to scan partial image then specify a rectangular area containing the characters. Aspose.OCR Cloud API allows passing X and Y coordinates from where the rectangle is supposed to be started as well as its width and height. Once the character recognition operation is initiated within a specified rectangular area - The cloud OCR API will read the characters and font information from that area and return the response in XML or JSON format..
 
 The characters of different languages have different representations. If we combine the languages with the font types and styles - it makes a large set of characters to be recognized from an image. Aspose.OCR Cloud handles this task very elegantly as it can recognize text in English, French and German languages.
 
 Aspose.OCR Cloud provided an API to recognize and extract OCR text from raster images (JPEG, PNG, GIF, BMP, TIFF). You can either pass the Image URL as a parameter or image file in the request body. Please check cURL and SDK examples for more details.
+
 ## **API Explorer**
+
 [The API Reference page](https://apireference.aspose.cloud/ocr/) is the easiest way to try out our APIs right away in your browser! It allows you to effortlessly interact and try out every single operation our APIs exposes.
+
 ## **cURL Example**
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
@@ -48,9 +53,13 @@ curl -v "https://api.aspose.cloud/v3.0/ocr/sample_ocr.png/recognize" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## **SDKs**
+
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-ocr-cloud) for a complete list of Aspose.OCR Cloud SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/ocr/available-sdks/) article to learn how to add an SDK to your project.
+
 ## **SDK Examples**
+
 **Extract OCR or HOCR Text from Images without using Storage**
 
 {{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Python" >}}
