@@ -52,14 +52,21 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 ## **SDK Examples**
 **Extract OCR or HOCR Text from Images**
 
-{{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Python" >}}
+{{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python">}}
 
 {{< tab tabNum="1" >}}
 
 {{< gist "aspose-cloud" "5bb5820cacb5174de9619dd1d1ce3367" "RecognizeFromStorage.cs" >}}
 
 {{< /tab >}}
+
 {{< tab tabNum="2" >}}
+
+{{< gist "aspose-cloud" "723802ba0a961dac4b73a96f1932469c" "Example-RecognizeFromStorage.java" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
 
 {{< gist "aspose-cloud" "806422f52a90ff15bbfcd268b91184a9" "RecognizeFromStorage.py" >}}
 

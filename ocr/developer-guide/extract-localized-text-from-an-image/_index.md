@@ -53,11 +53,17 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 ## **SDK Examples**
 **Extract Localized Text from an Image**
 
-{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
+{{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Java">}}
 
 {{< tab tabNum="1" >}}
 
 {{< gist "aspose-cloud" "5bb5820cacb5174de9619dd1d1ce3367" "RecognizeFromStorageDeFR.cs" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+{{< gist "aspose-cloud" "723802ba0a961dac4b73a96f1932469c" "Example-RecognizeFromStorageLanguage.java" >}}
 
 {{< /tab >}}
 
