@@ -56,7 +56,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "5bb5820cacb5174de9619dd1d1ce3367" "RecognizeFromStorage.cs" >}}
+{{< gist "aspose-cloud" "0f9e9de5290f0fcdfd93517225f2b66a" "Example-RecognizeFromStorage.cs" >}}
 
 {{< /tab >}}
 

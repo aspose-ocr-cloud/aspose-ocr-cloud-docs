@@ -66,7 +66,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "5bb5820cacb5174de9619dd1d1ce3367" "RecognizeFromContent.cs" >}}
+{{< gist "aspose-cloud" "0f9e9de5290f0fcdfd93517225f2b66a" "Example-RecognizeFromContent.cs" >}}
 
 {{< /tab >}}
 
@@ -86,11 +86,11 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 **Extract OCR or HOCR Text from Image URL**
 
-{{< tabs tabTotal="3" tabID="5" tabName1="C#" tabName2="Python" tabName3="Python" >}}
+{{< tabs tabTotal="3" tabID="5" tabName1="C#" tabName2="Java" tabName3="Python" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "5bb5820cacb5174de9619dd1d1ce3367" "RecognizeFromUrl.cs" >}}
+{{< gist "aspose-cloud" "0f9e9de5290f0fcdfd93517225f2b66a" "Example-RecognizeFromUrl.cs" >}}
 
 {{< /tab >}}
 
