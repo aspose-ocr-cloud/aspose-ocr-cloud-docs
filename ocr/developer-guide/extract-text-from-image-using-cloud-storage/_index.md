@@ -12,8 +12,8 @@ The characters of different languages have different representations. If we comb
 
 Aspose.OCR Cloud provided an API to recognize and extract OCR text from raster images (JPEG, PNG, GIF, BMP, TIFF) stored in the cloud.
 ## **API Explorer**
-[The API Reference page](https://apireference.aspose.cloud/ocr/) is the easiest way to try out our APIs right away in your browser! It allows you to effortlessly interact and try out every single operation our APIs exposes.
-## **cURL Example**
+[The API Reference page](https://apireference.aspose.cloud/ocr/#/Ocr/GetRecognizeDocument) is the easiest way to try out our APIs right away in your browser! It allows you to effortlessly interact and try out every single operation our APIs exposes.
+### **cURL Example**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
@@ -49,7 +49,7 @@ curl -v "https://api.aspose.cloud/v3.0/ocr/sample_ocr.png/recognize" \
 {{< /tabs >}}
 ## **SDKs**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Check out our [GitHub repository](https://github.com/aspose-ocr-cloud) for a complete list of Aspose.OCR Cloud SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/ocr/available-sdks/) article to learn how to add an SDK to your project.
-## **SDK Examples**
+### **SDK Examples**
 **Extract OCR or HOCR Text from Images**
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python">}}
