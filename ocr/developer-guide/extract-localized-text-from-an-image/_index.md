@@ -53,7 +53,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 ### **SDK Examples**
 **Extract Localized Text from an Image**
 
-{{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Java"> tabName3="Python">}}
+{{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python">}}
 
 {{< tab tabNum="1" >}}
 
