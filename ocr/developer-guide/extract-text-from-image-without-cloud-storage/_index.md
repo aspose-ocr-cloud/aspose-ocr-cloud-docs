@@ -62,7 +62,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 **Extract OCR or HOCR Text from Images without using Storage**
 
-{{< tabs tabTotal="4" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Android" >}}
+{{< tabs tabTotal="4" tabID="4" tabName1="C#" tabName2="Java" tabName3="Android" tabName4="Python" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -78,21 +78,22 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "806422f52a90ff15bbfcd268b91184a9" "RecognizeFromContent.py" >}}
+{{< gist "aspose-cloud" "7a771d5fa2f6ac367708ab42b9740d71" "Example-RecognizeFromContent.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "7a771d5fa2f6ac367708ab42b9740d71" "Example-RecognizeFromContent.java" >}}
+{{< gist "aspose-cloud" "806422f52a90ff15bbfcd268b91184a9" "RecognizeFromContent.py" >}}
 
 {{< /tab >}}
+
 
 {{< /tabs >}}
 
 **Extract OCR or HOCR Text from Image URL**
 
-{{< tabs tabTotal="4" tabID="5" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Android" >}}
+{{< tabs tabTotal="4" tabID="5" tabName1="C#" tabName2="Java" tabName3="Android" tabName4="Python" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -108,14 +109,15 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "806422f52a90ff15bbfcd268b91184a9" "RecognizeFromURL.py" >}}
+{{< gist "aspose-cloud" "7a771d5fa2f6ac367708ab42b9740d71" "Example-RecognizeFromUrl.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "7a771d5fa2f6ac367708ab42b9740d71" "Example-RecognizeFromUrl.java" >}}
+{{< gist "aspose-cloud" "806422f52a90ff15bbfcd268b91184a9" "RecognizeFromURL.py" >}}
 
 {{< /tab >}}
+
 
 {{< /tabs >}}
