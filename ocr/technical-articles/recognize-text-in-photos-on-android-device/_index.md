@@ -15,13 +15,13 @@ Before you start:
 1. Download, install and configure ADT on your computer.
 1. Create and configure an Android Virtual Device or connect a real Android device with your computer for testing.
 1. Set up a complete working and testing environment.
-### **Create a project**
+## **Create a project**
 1. From the **File** menu, select **New**, then **Android Application Project**.
    The **New Android Application** dialog is displayed.
 1. Enter **Application Name**, **Project Name** and **Package Name**. Leave the other settings as default.
 1. Click **Next**, **Next**, **Next** and **Next**.
 1. Click **Finish**.
-### **Application UI**
+## **Application UI**
 In **Project Explorer** double click *res/layout/activity_main.xml*. *activity_main.xml* is the UI of our application. Right-click it and select **Change Layout** option. Choose **LinearLayout (Vertical)** from the list and click **OK**. From the **Palette** drag a **Button** and a **TextView** to the white background area. Adjust their width, height and position using mouse as shown in the following screenshot:
 
 ![todo:image_alt_text](recognize-text-in-photos-on-android-device_1.png)
@@ -53,7 +53,7 @@ We want to access the *TextView* within our code, so we must add some identifier
 ```
 
 Click the newly added button to select and go to the **Properties** window in the right side. Edit the **Text** property and change its value to *Take Photo*. Updating the property will change the label/caption of the button. Scroll down and find another property **On Click**. Change it's value to *captureImage*. We want to associate a Java method called captureImage with the *click* event of this button. We shall discuss the code of the method later below.
-### **Application permissions**
+## **Application permissions**
 Our application will use some features provided by the system, that is the camera, storage and internet connection. We have to acquire permissions for these resources. Locate the file *AndroidManifest.xml* in **Project Explorer** window and double-click to open it. Add the following code under the <manifest> element.
 
 **AndroidManifest.xml**
@@ -81,7 +81,7 @@ Our application will use some features provided by the system, that is the camer
 </manifest>
 
 ```
-### **Implementation**
+## **Implementation**
 Our code has four major parts.
 
 1. captureImage Send request to camera to capture photo and save it on external device
@@ -436,5 +436,5 @@ public class MainActivity extends ActionBarActivity {
 ```
 
 Putting all things together, we have captured an image using device camera, saved the image in a temporary file on external storage, used Aspose.OCR Cloud to recognize text in that image, used AsyncTask for REST API, displayed the results on the screen. User can copy the text and paste it in any other application.
-### **Download**
+## **Download**
 Download the complete working project from [Github repository](https://github.com/AsposeSocialMedia/PhotoOCR_for_Android). You will need appSID and appKey to run this application. Sign up at <https://dashboard.aspose.cloud/> for free to get them.

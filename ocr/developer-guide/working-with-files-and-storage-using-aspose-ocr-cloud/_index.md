@@ -6,7 +6,7 @@ weight: 30
 ---
 
 ## **Introduction**
-Aspose.OCR Cloud provides helper functions to work with files uploaded to Aspose.OCR Cloud Storage or any other Cloud Storage of your choice. If you need any help getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
+Aspose.OCR Cloud provides helper functions to work with files uploaded to Aspose.OCR Cloud Storage or any other Cloud Storage of your choice. If you need any help getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/total/getting-started/dashboard/how-to-configure-3rd-party-cloud-storages/).
 ### **Download a file from Cloud Storage**
 #### **API Information**
 

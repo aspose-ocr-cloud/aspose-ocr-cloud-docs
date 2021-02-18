@@ -6,7 +6,7 @@ weight: 50
 ---
 
 ## **Running Aspose.OCR Cloud Examples**
-All examples of Aspose.OCR Cloud are hosted on [Github](https://github.com/aspose-ocr-cloud). Examples are located in the **Examples** folder.
+All examples of Aspose.OCR Cloud are hosted on [Github](https://github.com/aspose-ocr-cloud).
 ## **Contribute**
 If you like to add or improve an example, we encourage you to contribute to the project. All examples and showcase projects in this repository are open source and can be freely used in your own applications.
 

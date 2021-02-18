@@ -6,8 +6,8 @@ weight: 20
 ---
 
 ## **Input Image Formats**
-- [JPEG](https://wiki.fileformat.com/Image/JPEG/)
-- [PNG](https://wiki.fileformat.com/Image/PNG/)
-- [GIF](https://wiki.fileformat.com/Image/GIF/)
-- [BMP](https://wiki.fileformat.com/Image/BMP/)
-- [TIFF](https://wiki.fileformat.com/Image/TIFF/)
+- [JPEG](https://docs.fileformat.com/image/jpeg/)
+- [PNG](https://docs.fileformat.com/image/png/)
+- [GIF](https://docs.fileformat.com/image/gif/)
+- [BMP](https://docs.fileformat.com/image/bmp/)
+- [TIFF](https://docs.fileformat.com/image/tiff/)
