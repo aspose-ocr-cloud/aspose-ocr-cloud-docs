@@ -14,7 +14,7 @@ keywords:
 - symbols
 ---
 
-Aspose.OCR Cloud can recognize **45** languages and all popular writing scripts.
+Aspose.OCR Cloud can recognize **48** languages and all popular writing scripts.
 
 ## Extended Latin alphabet
 
@@ -24,7 +24,7 @@ Aspose.OCR Cloud can recognize **45** languages and all popular writing scripts.
 - Czech
 - Danish
 - Dutch
-- English
+- English (including handwritten script)
 - Estonian
 - Finnish
 - French
@@ -40,7 +40,7 @@ Aspose.OCR Cloud can recognize **45** languages and all popular writing scripts.
 - Portuguese
 - Romanian
 - Slovak
-- Slovenian
+- Slovene
 - Spanish
 - Swedish
 - Turkish
@@ -49,7 +49,10 @@ Aspose.OCR Cloud can recognize **45** languages and all popular writing scripts.
 
 ## Cyrillic alphabet
 
+- Belorussian
 - Bulgarian
+- Kazakh
+- Macedonian
 - Russian
 - Serbian
 - Ukrainian
