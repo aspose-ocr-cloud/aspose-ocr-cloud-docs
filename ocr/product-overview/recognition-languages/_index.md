@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-07-11"
+date: "2022-12-11"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-languages/
@@ -14,12 +14,12 @@ keywords:
 - symbols
 ---
 
-Aspose.OCR Cloud can recognize **48** languages and all popular writing scripts.
+Aspose.OCR Cloud can recognize **48** languages, including handwritten scripts.
 
 ## Extended Latin alphabet
 
-- Azerbaijani
 - Albanian
+- Azerbaijani
 - Croatian
 - Czech
 - Danish
@@ -51,11 +51,11 @@ Aspose.OCR Cloud can recognize **48** languages and all popular writing scripts.
 
 - Belorussian
 - Bulgarian
-- Kazakh
+- Kazah
 - Macedonian
 - Russian
 - Serbian
-- Ukrainian
+- Ukrainan
 
 ## Middle Eastern scripts
 

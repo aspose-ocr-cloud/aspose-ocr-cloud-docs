@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-07-12"
+date: "2022-12-11"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-file-formats/
@@ -44,11 +44,13 @@ Recognition results are returned in the most popular document and data exchange 
 Format    | Details
 --------- | -------
 **Plain text** | Unformatted text, optionally broken into lines
-**.PDF**  | Portable Document Format
+**.PDF** | Portable Document Format
 **.CSV** | A plain text file that contains tabular data separated by commas
 **.XLSX** | Microsoft Excel spreadsheet
-**hOCR**  | XML-based open standard of data representation for formatted text obtained from OCR. Commonly used to make searchable PDF files.
+**hOCR** | XML-based open standard of data representation for formatted text obtained from OCR. Commonly used to make searchable PDF files.
+**WAV** | Waveform Audio File, the main format used on Microsoft Windows systems for uncompressed audio. 
 
 {{% alert color="primary" %}}
-The **.CSV** and **.XLSX** formats are available for tabular data recognition.
+- **.CSV** and **.XLSX** formats are available for tabular data recognition.
+- Files in **WAV** format are returned by text-to-speech recognition methods.
 {{% /alert %}}

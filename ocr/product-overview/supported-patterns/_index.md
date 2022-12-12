@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-07-12"
+date: "2022-12-11"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-patterns/
@@ -14,7 +14,8 @@ keywords:
 Aspose.OCR Cloud provides several predefined patterns to maximize recognition accuracy for specific business needs:
 
 - Read an entire image.
-- Read a PDF file (all pages).
-- Recognize a specific region of the image.
+- Read a scanned PDF document and add text as a searchable overlay.
+- Extract text from a specific region of the image.
 - Convert an image containing tabular data into a spreadsheet or CSV file.
 - Extract data from a scanned or photographed receipt.
+- Read aloud text on an image.
