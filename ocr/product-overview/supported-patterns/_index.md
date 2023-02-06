@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-12-11"
+date: "2022-01-31"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-patterns/
@@ -18,4 +18,5 @@ Aspose.OCR Cloud provides several predefined patterns to maximize recognition ac
 - Extract text from a specific region of the image.
 - Convert an image containing tabular data into a spreadsheet or CSV file.
 - Extract data from a scanned or photographed receipt.
+- Improve image resolution, correct rotated, skewed and distorted images, automatically remove image defects.
 - Read aloud text on an image.

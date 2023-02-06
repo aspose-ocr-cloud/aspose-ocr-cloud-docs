@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-12-11"
+date: "2023-01-31"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-file-formats/
@@ -33,7 +33,7 @@ Extension             | Details
 **.SVG**              | Scalable Vector Graphics, one of the most popular vector graphic format on the internet
 
 {{% alert color="primary" %}}
-Images may be provided as files or web links. You can recognize the entire image or only a specific area of the image.
+You can recognize the entire image or only a specific area of the image.
 {{% /alert %}}
 
 

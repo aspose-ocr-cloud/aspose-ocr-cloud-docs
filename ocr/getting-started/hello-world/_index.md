@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-07-13"
+date: "2023-01-31"
 author: "Vladimir Lapin"
 type: docs
 url: /hello-world/
@@ -8,7 +8,7 @@ aliases:
 - /quickstart/
 - /how-to-run-the-examples/
 title: Hello, world!
-description: Get familiar with Aspose.OCR Cloud by running a bare minimum example.
+description: Get familiar with Aspose.OCR Cloud by running the simplest example on any system.
 keywords:
 - hello world
 - evaluation
@@ -27,12 +27,12 @@ We assume that you have already [signed up](/ocr/sign-up/) to the service and ha
 ## You will need
 
 - [Any system](/ocr/system-requirements/) with Internet connection.
-- Some simple image with English text. You can take the one from this article.
+- Some image with English text. You can take the one from this article.
 - A web browser.
-- Any tool that allows you to make REST API calls, such as [cURL](https://curl.se/) or [Postman](https://www.postman.com/). The article provides cURL examples.
+- Any tool that allows you to make REST API calls, such as [cURL](https://curl.se/) or [Postman](https://www.postman.com/). This article provides cURL examples.
 - **15 minutes** of spare time.
 
-## Getting an access token
+## Get an access token
 
 The Aspose.OCR Cloud API is fully compliant with industry security standards and best practices. Data transfer is carried out using JWT authentication, which eliminates all possibilities of data theft or disclosure.
 
@@ -40,7 +40,8 @@ To obtain a JWT token, get the _Client ID_ and _Client Secret_ credentials:
 
 1. Sign in to [GroupDocs Cloud API Dashboard](https://dashboard.aspose.cloud/).
 2. Go to [**Applications**](https://dashboard.aspose.cloud/applications) page.
-3. Create the `samples` storage for exchanging files by clicking the _plus_ icon and following the required steps. For this example, _Internal storage_ with _24-hour_ retention will suffice.
+3. Create the storage. Click the _plus_ icon and follow the required steps.  
+   _Internal storage_ with _24-hour_ retention will suffice.
 4. Provide the application name, for example, _HelloWorld_.
 5. Click **Save** button.
 6. Click the newly created **HelloWorld** application and copy the values from **Client Id** and **Client Secret** fields.
@@ -55,7 +56,7 @@ curl --location --request POST 'https://api.aspose.cloud/connect/token' \
      --data-urlencode 'client_secret=CLIENT-SECRET-VALUE'
 ```
 
-You should get a response that looks something like this:
+You should get a response that looks like this:
 
 ```json
 {
@@ -65,50 +66,93 @@ You should get a response that looks something like this:
 }
 ```
 
+The string in `access_token` property will be used to authorize further calls to Aspose.OCR Cloud API.
+
 {{% alert color="primary" %}} 
 The access token will be valid for the number of seconds specified in the `expires_in` property. If it has expired, request a new one using the same credentials.
 {{% /alert %}}
 
-## Uploading an image to Aspose cloud
+## Encode the image to Base64
 
-Let's start with a very simple image (`source.png`):
+An image sent to the Aspose.OCR Cloud REST API must be Base64 encoded. You can use any online tool, for example, [Aspose Base64 online converter](https://products.aspose.app/ocr/img-to-base64):
 
-<img src="/ocr/hello-world/source.png" alt="Image to recognize" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" />
+1. Download the sample image  
+   <img src="/ocr/hello-world/source.png" alt="Image to recognize" style="margin-top: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);" />
+2. Drag the image inside the box and click **Convert to Base64** button.
+3. Copy Base64 string to the clipboard.
 
-Right-click the image and click **Save image as** to save a file to your computer. Now upload the file to the online storage, created on the previous step:
-
-1. Open [**Files**](https://dashboard.aspose.cloud/files) page of **Aspose Cloud API Dashboard**.
-2. Select `samples` storage.
-3. Drag the `source.png` file to the storage.
-
-## Converting an image to text
+## Convert the image to text
 
 Make the following API call:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v3.0/ocr/source.png/recognize?storage=samples' \
+curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage' \
+--header 'Accept: text/plain' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \
+--data-raw '{
+  "image": "iVBORw0KGgoAAAANSUh...d1iEAAAAASUVORK5CYII=",
+  "settings": {
+    "language": "English"
+  }
+}'
+```
+
+- The authorization header must contain the access token obtained [earlier](#getting-an-access-token).
+- The `image` property in the request body (the value of the `--data-raw` command-line parameter) must contain a [Base64 encoded image](#encoding-the-image-to-base64).
+
+{{% alert color="primary" %}} 
+Read the description of `PostRecognizeImage` API method in [Aspose.Ocr Cloud API Reference](https://api.aspose.cloud/v5.1/ocr/swagger/index.html) for more information on the request parameters.
+{{% /alert %}}
+
+Wait a moment. The request will be placed in the queue and you will get its unique identifier. For example:
+
+```
+48d50d5b-8ec3-4a8b-8403-e8cfa976f3ad
+```
+
+## Fetch the recognition result
+
+Recognition will take a second or two, depending on the size of the image and the current Aspose.Cloud load. After the recognition is completed, the result can be obtained using the following API call:
+
+```bash
+curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage?id=48d50d5b-8ec3-4a8b-8403-e8cfa976f3ad' \
+--header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \
 ```
 
-Where `source.png` is a name of the image file and `samples` is the name of the Aspose cloud storage. Read the description of `/ocr/{name}/recognize` API call in [Aspose.Ocr Cloud API Reference](https://apireference.aspose.cloud/ocr/#/Ocr/GetRecognizeDocument) for more information on the request parameters.
+- The authorization header must contain the access token obtained [earlier](#getting-an-access-token).
+- The `id` query string parameter must contain the unique identifier of the recognition request returned in the [previous step](#converting-an-image-to-text).
 
-Wait a seconds or two. You will get the following response:
+When the image is recognized, you will get the following response:
 
 ```json
 {
-	"text": "All men live enveloped in whale-lines.",
-	"pdf": null,
-	"hocr": null,
-	"status": "200",
-	"statusMessage": "success",
-	"code": 200
+	"id": "a197aade-bba9-4c7a-92c7-46851b3dceaa",
+	"responseStatusCode": "Ok",
+	"taskStatus": "Completed",
+	"results": [
+		{
+			"type": "Text",
+			"data": "QWxsIG1lbiBsaXZlIGVudmVsb3BlZCBpbiB3aGFsZS1saW5lcy4="
+		}
+	],
+	"error": null
 }
 ```
 
-`text` property of the response body will contain the recognized text.
+The `data` property contains Base64 encoded text from the image. You can decode it with any online or on-premise decoder, such as [Aspose Base64 online converter](https://products.aspose.app/pdf/conversion/base64). The above code returns the following string:
 
-## Live code sample
+```
+All men live enveloped in whale-lines.
+```
+
+{{% alert color="primary" %}} 
+Aspose.OCR Cloud will keep the recognition result in its internal storage for **24 hours**.
+{{% /alert %}}
+
+## Live sample
 
 {{< blocks/feature >}}
 <!-- BEGIN LCS -->
@@ -377,10 +421,6 @@ Wait a seconds or two. You will get the following response:
 		</div>
 	</div>
 	<p class="ocr-lcs-disclaimer">* By uploading your files or using the service you agree with our <a href="https://about.aspose.com/legal/terms-of-use" rel="nofollow noreferrer" target="_blank">Terms of use</a> and <a href="https://about.aspose.com/legal/privacy-policy" rel="nofollow noreferrer" target="_blank">Privacy Policy</a>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl --location --request GET <span style="color:#4e9a06">'https://api.aspose.cloud/v3.0/ocr/<span class="ocr-lcs-code-filename-placeholder">&lt;file name&gt;</span><span class="ocr-lcs-code-filename-actual"></span>/recognize?storage=samples'</span> <span style="color:#4e9a06">\
-</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>--header <span style="color:#4e9a06">'Content-Type: application/json'</span> <span style="color:#4e9a06">\
-</span></span></span><span style="display:flex;"><span><span style="color:#4e9a06"></span>--header <span style="color:#4e9a06">'Authorization: Bearer {YOUR JWT TOKEN}'</span> <span style="color:#4e9a06">\
-</span></span></span></code></pre></div>
 	<div class="ocr-lcs-result" onclick="OcrLcsCurtainClick(this)">
 		<div>
 			<header>
@@ -414,8 +454,6 @@ Wait a seconds or two. You will get the following response:
 				$(obj).closest(".ocr-lcs-controls").find(".ocr-lcs-recognize").removeClass("ocr-lcs-disabled");
 				$(obj).siblings(".ocr-lcs-filename").show().children("span").text(fileName);
 				$(obj).siblings(".ocr-lcs-recognizing").children("span").text(fileName);
-				$(obj).closest(".ocr-lcs").find(".ocr-lcs-code-filename-placeholder").hide();
-				$(obj).closest(".ocr-lcs").find(".ocr-lcs-code-filename-actual").text(fileName).show();
 			}
 		}
 
@@ -458,8 +496,6 @@ Wait a seconds or two. You will get the following response:
 				icon.show();
 				hint.show();
 				button.closest(".ocr-lcs-controls").find("input[type='file']")[0].value = null;
-				$(obj).closest(".ocr-lcs").find(".ocr-lcs-code-filename-placeholder").show();
-				$(obj).closest(".ocr-lcs").find(".ocr-lcs-code-filename-actual").hide();
 			});
 		}
 
@@ -479,7 +515,6 @@ Wait a seconds or two. You will get the following response:
 
 ## What’s next?
 
-Congratulations! You have successfully recognized the text in the image. Read the [Developer's reference](/ocr/developer-reference/) and [API Reference](https://apireference.aspose.cloud/ocr/) for details on creating advanced OCR solutions with Aspose.Ocr Cloud.
+Congratulations! You have successfully recognized the text in the image. Read the [Developer's reference](/ocr/developer-reference/) and [API Reference](https://api.aspose.cloud/v5.1/ocr/swagger/index.html?urls.primaryName=V5.1) for details on creating advanced optical character recognition solutions with Aspose.OCR Cloud.
 
 You can also check [Aspose.OCR Cloud GitHub repositories](https://github.com/aspose-ocr-cloud) for code examples in various programming languages, demonstrating advanced OCR API capabilities. If you like to add or improve an example, we encourage you to contribute to the project. Fork the repository, edit the source code and create a pull request. We will review the changes and include it in the repository if found helpful.
-

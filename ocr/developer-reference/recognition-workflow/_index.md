@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-07-18"
+date: "2023-02-01"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-workflow/
@@ -10,31 +10,54 @@ keywords:
 - flow
 - process
 - steps
+- diagram
+- process
+- request
+- response
 ---
 
-Aspose.OCR Cloud offers several ways to provide an image or PDF file for recognition.
+Aspose.OCR Cloud can read even the most complex images or PDF documents with just 2 REST API calls or a few lines of code in any programming language supported by [SDK](/ocr/available-sdks/). Read [Hello, world!](/ocr/hello-world/) article for a hands-on example.
 
-## Through the request body
+![Aspose.OCR Cloud recognition flow](ocr-cloud-flow.png)
 
-A binary content of a file that should be recognized is passed to the Aspose.OCR Cloud API in the request body.
+## 1. Submit image for OCR
 
-![Recognize image from the request body](cloud-ocr-content.png)
+Aspose.OCR Cloud can read all popular [image formats](/ocr/supported-file-formats/) as well as scanned PDF documents. The image is provided as a _Base64 encoded_ string. You can also specify advanced recognition parameters in the request.
 
-- [Recognizing an image from request body](/ocr/recognize-image-from-content/)
+To authorize your requests to Aspose.OCR Cloud API, pass the [access token](/ocr/authorization/) in _Authorization_ header of the request along with the image / PDF.
 
-## Through the cloud storage
+{{% alert color="primary" %}} 
+If you are using [Aspose.OCR Cloud SDK](/ocr/available-sdks/), you do not have to worry about content encoding, getting an access token, setting request headers, and other technical issues. The SDK will perform all routine operations: from establishing a connection with the Aspose.OCR cloud API to receiving and parsing the response.
+{{% /alert %}} 
 
-A file that should be recognized is first placed to the cloud storage and then passed to the Aspose.OCR Cloud API by providing the file path and the storage name in the request parameters.
+## 2. Get the request ID
 
-![Recognize image from the cloud storage](cloud-ocr-storage.png)
+Your recognition request is queued and you will receive a unique identifier that can be used to retrieve results or cancel the request.
 
-- [Working with cloud storage](/ocr/storage/)
-- [Recognizing an image from cloud storage](/ocr/recognize-image-from-storage/)
+For more information on what happens in the cloud, read [Behind the scenes](#behind-the-scenes) section.
 
-## From the URL
+## 3. Fetch the recognition result
 
-A file that should be recognized is passed as a link to the web resource. There is no need to download it to your device.
+Just call the Aspose.OCR Cloud API with the request ID to retrieve the recognized content and processing status. The recognition may take a second or two, depending on the size of the image and the current Aspose.Cloud load. For more information on what happens in the cloud, read [Behind the scenes](#behind-the-scenes) section.
 
-![Recognize image from the URL](cloud-ocr-url.png)
+To authorize your request, pass the [access token](/ocr/authorization/) in _Authorization_ header.
 
-- [Recognizing an image from URL](/ocr/recognize-image-from-url/)
+{{% alert color="primary" %}} 
+If you are using [Aspose.OCR Cloud SDK](/ocr/available-sdks/), it will handle all authorization routines.
+{{% /alert %}} 
+
+## 4. Process the recognition result
+
+If the OCR process completes successfully, you will get back the recognition results in JSON format along with technical details. Recognized text, audio or file content will be _encoded in Base64_. After decoding, you can save it to disk, display on the screen, analyze, or write to a database.
+
+{{% alert color="primary" %}}
+[Aspose.OCR Cloud SDK](/ocr/available-sdks/) takes care of all the routine operations so you can get content directly with no extra effort.
+{{% /alert %}}
+
+## Behind the scenes
+
+OCR is a resource-intensive process that involves sophisticated neural networks and complex calculations. Even with high-performance GPU-based servers, this can take some time, especially when reading large images and long PDF documents.
+
+To balance resources under high load and ensure reliable and secure operation, we have introduced _queued processing_. Instead of being immediately sent for recognition, the source image / PDF is placed in a queue under a unique identifier. The queue is constantly monitored and processed in the background using advanced load balancing techniques.
+
+Once the image is recognized, the result is saved to internal storage, from where it can be retrieved using the unique ID within **24 hours** after an OCR request has been made.

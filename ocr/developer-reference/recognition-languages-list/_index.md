@@ -1,6 +1,6 @@
 ---
-weight: 100
-date: "2022-07-21"
+weight: 30
+date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-languages-list/
@@ -14,56 +14,56 @@ keywords:
 - character
 ---
 
-Aspose.OCR Cloud can recognize text in one of 48 languages and supports handwritten English. You must specify the language you are reading in the `language` request parameter. By default, the text is considered to be in English.
+Aspose.OCR Cloud can recognize text in one of 48 languages and supports handwritten English. By default, the text is considered to be in _English_.
 
-Language | Request parameter value
----------|------------------------
-English | 1
-German | 2
-French | 3
-Italian | 4
-Spanish | 5
-Portuguese | 6
-Polish | 7
-Slovene | 8
-Slovak | 9
-Dutch | 10
-Lithuanian | 11
-Latvian | 12
-Danish | 13
-Norwegian | 14
-Finnish | 15
-Serbian | 16
+Language | Numeric shortcut
+---------|-----------------
+Albanian | 39
+Arabic | 24
+Azerbaijani | 45
+Belorussian | 48
+Bengali | 27
+Bulgarian | 44
+Chinese | 22
 Croatian | 17
 Czech | 18
-Swedish | 19
+Danish | 13
+Dutch | 10
+English | 1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Handwritten English_ | 100
 Estonian | 20
-Romanian | 21
-Chinese | 22
-Russian | 23
-Arabic | 24
-Hindi | 25
-Ukrainian | 26
-Bengali | 27
-Tibetan | 28
-Thai | 29
-Urdu | 30
-Turkish | 31
-Korean | 32
-Indonesian | 33
-Hebrew | 34
-Javanese | 35
-Greek | 36
-Japanese | 37
-Persian | 38
-Albanian | 39
-Latin | 40
-Vietnamese | 41
-Uzbek | 42
+Finnish | 15
+French | 3
 Georgian | 43
-Bulgarian | 44
-Azerbaijani | 45
+German | 2
+Greek | 36
+Hebrew | 34
+Hindi | 25
+Indonesian | 33
+Italian | 4
+Japanese | 37
+Javanese | 35
 Kazakh | 46
+Korean | 32
+Latin | 40
+Latvian | 12
+Lithuanian | 11
 Macedonian | 47
-Belorussian | 48
-Handwritten English | 100
+Norwegian | 14
+Persian | 38
+Polish | 7
+Portuguese | 6
+Romanian | 21
+Russian | 23
+Serbian | 16
+Slovak | 9
+Slovene | 8
+Spanish | 5
+Swedish | 19
+Thai | 29
+Tibetan | 28
+Turkish | 31
+Ukrainian | 26
+Urdu | 30
+Uzbek | 42
+Vietnamese | 41

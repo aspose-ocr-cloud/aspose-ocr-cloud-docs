@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-07-21"
+date: "2023-02-01"
 author: "Vladimir Lapin"
 type: docs
 url: /authorization/
@@ -20,12 +20,19 @@ Aspose.OCR Cloud follows industry standards and best practices to keep your data
 
 Time-limited JWT tokens are generated using _Client ID_ and _Client Secret_ credentials that are specific for each application. To obtain the credentials:
 
-1. Sign in to [GroupDocs Cloud API Dashboard](https://dashboard.aspose.cloud/).
+1. Sign in to [Aspose Cloud API Dashboard](https://dashboard.aspose.cloud/).
 2. Go to [**Applications**](https://dashboard.aspose.cloud/applications) page.
-3. Create the storage for exchanging files by clicking the _plus_ icon and following the required steps. You can either use [your own cloud storage](/total/getting-started/dashboard/how-to-configure-3rd-party-cloud-storages/), create a new storage in our cloud, or reuse the existing one.
-4. Give the application an easily recognizable name so it can be quickly found in a long list.
-5. Click **Save** button.
-6. Click the newly created application and copy the values from **Client Id** and **Client Secret** fields.
+3. Click **Create New Application** button.
+4. Give the application an easily recognizable name so it can be quickly found in a long list, and provide an optional detailed description.
+5. Create the cloud storage by clicking the _plus_ icon and following the required steps. You can also reuse existing storage, if available.   
+   Aspose.OCR Cloud uses its own internal storage, so you can provide the bare minimum storage options:
+
+    - Type: **Internal storage**
+    - Storage name: _Any name you like_
+    - Storage mode: **Retain files for 24 hours**
+
+6. Click **Save** button.
+7. Click the newly created application and copy the values from **Client Id** and **Client Secret** fields.
 
 {{% alert color="primary" %}} 
 Keep your credentials safe! If you feel that they might be compromised, regenerate them immediately.
