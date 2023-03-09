@@ -4,6 +4,7 @@ date: "2023-01-27"
 author: "Vladimir Lapin"
 type: docs
 url: /product-overview/
+feedback: OCRCLOUD
 title: Product overview
 description: An introduction to Aspose.OCR Cloud technology and how it can help you with your day-to-day business tasks.
 keywords:

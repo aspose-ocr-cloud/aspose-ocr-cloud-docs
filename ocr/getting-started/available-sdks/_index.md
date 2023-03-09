@@ -4,6 +4,7 @@ date: "2022-07-13"
 author: "Vladimir Lapin"
 type: docs
 url: /available-sdks/
+feedback: OCRCLOUD
 title: Available SDKs
 description: Find the latest software development kits (SDKs) that help you easily integrate Aspose.OCR Cloud into your applications.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-07-12"
 author: "Vladimir Lapin"
 type: docs
 url: /system-requirements/
+feedback: OCRCLOUD
 aliases:
 - /supported-platforms/
 title: System requirements

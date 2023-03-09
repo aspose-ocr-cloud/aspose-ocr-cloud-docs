@@ -4,6 +4,7 @@ date: "2023-01-31"
 author: "Vladimir Lapin"
 type: docs
 url: /hello-world/
+feedback: OCRCLOUD
 aliases:
 - /quickstart/
 - /how-to-run-the-examples/

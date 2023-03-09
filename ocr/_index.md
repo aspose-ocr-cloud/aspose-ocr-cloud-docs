@@ -4,6 +4,7 @@ date: "2023-01-30"
 author: "Vladimir Lapin"
 type: docs
 url: /
+feedback: OCRCLOUD
 is_root: true
 title: Aspose.OCR Cloud
 description: Cloud-based REST API for optical character recognition from any device, platform and programming language.

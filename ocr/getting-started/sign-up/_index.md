@@ -4,6 +4,7 @@ date: "2022-07-12"
 author: "Vladimir Lapin"
 type: docs
 url: /sign-up/
+feedback: OCRCLOUD
 title: Signing up
 description: Learn how to sign up for Aspose.OCR Cloud service.
 keywords:

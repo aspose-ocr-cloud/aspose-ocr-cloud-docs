@@ -4,6 +4,7 @@ date: "2022-07-13"
 author: "Vladimir Lapin"
 type: docs
 url: /get-help/
+feedback: OCRCLOUD
 aliases:
 - /technical-support/
 title: Get help

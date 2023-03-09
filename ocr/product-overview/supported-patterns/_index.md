@@ -4,6 +4,7 @@ date: "2022-01-31"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-patterns/
+feedback: OCRCLOUD
 title: Supported recognition patterns
 description: Aspose.OCR Cloud offers several predefined recognition algorithms to maximize recognition accuracy for specific business tasks.
 keywords:

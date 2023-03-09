@@ -2,6 +2,7 @@
 title: "Aspose.OCR Cloud 18.06 Release Notes"
 type: docs
 url: /aspose-ocr-cloud-18-06-release-notes/
+feedback: OCRCLOUD
 weight: 10
 ---
 

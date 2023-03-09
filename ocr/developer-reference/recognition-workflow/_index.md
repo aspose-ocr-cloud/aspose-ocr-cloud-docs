@@ -4,6 +4,7 @@ date: "2023-02-01"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-workflow/
+feedback: OCRCLOUD
 title: Recognition workflow
 description: An overview of the Aspose.OCR Cloud recognition process.
 keywords:

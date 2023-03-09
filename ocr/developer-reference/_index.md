@@ -1,9 +1,10 @@
 ---
 weight: 30
-date: "2022-07-11"
+date: "2023-02-06"
 author: "Vladimir Lapin"
 type: docs
 url: /developer-reference/
+feedback: OCRCLOUD
 aliases:
 - /developer-guide/
 title: Developer's reference
@@ -26,9 +27,19 @@ This reference will guide you through everything you need to know to get the mos
   An overview of the Aspose.OCR Cloud recognition process.
 - [Authorization](/ocr/authorization/)  
   How to get an access token and use it to authorize Aspose.OCR Cloud API requests.
-- [Working with cloud storage](/ocr/storage/)  
-  How to create and manage cloud storage and upload files to be recognized.
 - [Image recognition](/ocr/recognize-image/)  
-  How to extract the text from an image with Aspose.OCR Cloud.
+  How to extract text from images using the Aspose.OCR Cloud API.
 - [PDF recognition](/ocr/recognize-pdf/)  
-  How to extract the text from a scanned PDF file with Aspose.OCR Cloud.
+  How to extract text from scanned PDF documents using the Aspose.OCR Cloud API.
+- [Receipt recognition](/ocr/recognize-receipt/)  
+  How to extract text from receipts using the Aspose.OCR Cloud API.
+- [Table recognition](/ocr/recognize-table/)  
+  How to extract text from scanned or photographed tables using the Aspose.OCR Cloud API.
+- [Regions detection](/ocr/detect-regions/)  
+  How to find blocks of text on an image using the Aspose.OCR Cloud API.
+- [Regions recognition](/ocr/recognize-regions/)  
+  How to extract text from certain areas of the image using ASPOSE.OCR Cloud API.
+- [Text to speech conversion](/ocr/text-to-speech/)  
+  How to reading the text aloud using the Aspose.OCR Cloud API.
+- [Image preprocessing](/ocr/preprocess-image/)  
+  How to improve images and adjust it for OCR using the Aspose.OCR Cloud API.

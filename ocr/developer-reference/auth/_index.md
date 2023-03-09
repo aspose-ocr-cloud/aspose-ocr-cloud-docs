@@ -4,6 +4,7 @@ date: "2023-02-01"
 author: "Vladimir Lapin"
 type: docs
 url: /authorization/
+feedback: OCRCLOUD
 title: Authorization
 description: How to get an access token and use it to authorize Aspose.OCR Cloud API requests.
 keywords:

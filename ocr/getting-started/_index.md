@@ -4,6 +4,7 @@ date: "2022-07-11"
 author: "Vladimir Lapin"
 type: docs
 url: /getting-started/
+feedback: OCRCLOUD
 title: Getting started
 description: Learn how to start using Aspose.OCR Cloud right away.
 keywords:

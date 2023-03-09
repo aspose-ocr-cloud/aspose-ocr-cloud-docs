@@ -4,6 +4,7 @@ date: "2022-07-12"
 author: "Vladimir Lapin"
 type: docs
 url: /subscription/
+feedback: OCRCLOUD
 aliases:
 - /pricing-plan/
 - /evaluate-aspose-ocr/

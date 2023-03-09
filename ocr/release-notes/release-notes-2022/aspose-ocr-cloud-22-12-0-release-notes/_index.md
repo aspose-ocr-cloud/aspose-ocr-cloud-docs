@@ -4,6 +4,7 @@ date: "2022-12-12"
 author: "Vladimir Lapin"
 type: docs
 url: /aspose-ocr-cloud-22-12-0-release-notes/
+feedback: OCRCLOUD
 title: Aspose.OCR Cloud 22.12.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR Cloud 22.12.0 (December 2022) release.
 keywords:

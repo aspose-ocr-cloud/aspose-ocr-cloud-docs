@@ -4,6 +4,7 @@ date: "2023-01-31"
 author: "Vladimir Lapin"
 type: docs
 url: /features-benefits/
+feedback: OCRCLOUD
 title: Why Aspose.OCR Cloud?
 description: Discover key features and benefits of Aspose.OMR Cloud.
 keywords:
