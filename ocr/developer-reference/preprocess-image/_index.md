@@ -1,11 +1,15 @@
 ---
 weight: 100
-date: "2023-03-01"
+date: "2023-05-11"
 author: "Vladimir Lapin"
 type: docs
-url: /preprocess-image/
+url: /process-image/
+aliases:
+- /preprocess-image/
+- /fetch-preprocessed-image/
+- /preprocessing-sdk/
 feedback: OCRCLOUD
-title: Image preprocessing
+title: Image processing
 description: Automatic or manual actions for improving an image before sending it for recognition.
 keywords:
 - preprocess

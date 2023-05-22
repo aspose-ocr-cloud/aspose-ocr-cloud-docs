@@ -1,14 +1,15 @@
 ---
-weight: 1
-date: "2022-05-12"
+weight: 81
+date: "2023-05-11"
 author: "Vladimir Lapin"
 type: docs
-url: /release-notes/latest/
+url: /aspose-ocr-cloud-23-5-0-release-notes/
 feedback: OCRCLOUD
-title: Latest release (May 2023)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR Cloud 23.5.0 (May 2023) release.
+title: Aspose.OCR Cloud 23.5.0 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR Cloud 23.5.0 (May 2022) release.
 keywords:
-- latest
+- May
+- 2023
 - new
 - release
 - changelog
@@ -254,11 +255,7 @@ curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/djvu2pdf' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \
 --data-raw '{
-  "image": "iVBORw0KGgoAAAANSUh...d1iEAAAAASUVORK5CYII=",
-  "settings": {
-    "language": "English",
-    "resultType": "Pdf"
-  }
+  "image": "iVBORw0KGgoAAAANSUh...d1iEAAAAASUVORK5CYII="
 }'
 ```
 

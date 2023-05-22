@@ -78,43 +78,7 @@ Aspose.OCR Cloud offers a smart upsampling algorithm that can increase image res
 	}
 </script>
 
-To intellectually improve the image resolution, send a **POST** request with the image file to the `https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostUpsamplingImageFile` Aspose.OCR Cloud REST API endpoint or enable `makeUpsampling` property in recognition settings.
+## Usage scenarios
 
-## Using the recognition setting
-
-The `makeUpsampling` recognition setting is available for all image recognition methods. To automatically upsample the image during the recognition, simply set this option to `true`.
-
-While this greatly simplifies the code, you have no control over the intermediate results or the order in which the preprocessing filters are applied to the image.
-
-## Using the dedicated endpoint
-
-Posting an image to the Aspose.OCR Cloud endpoint `https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostUpsamplingImageFile` allows you to [fetch](/ocr/fetch-preprocessed-image/) a preprocessed image that can be handled by other preprocessing filters or recognized. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
-
-The image is provided as a form data.
-
-### Return value
-
-If successful, `PostUpsamplingImageFile` method returns a string with a unique identifier (GUID) of the upsampling request in the [queue](/ocr/recognition-workflow/).
-
-Otherwise, it returns a HTTP status code corresponding to the error.
-
-### What's next
-
-Upsampling will take a few seconds, depending on the image size and the current Aspose.Cloud load. See the article [Fetching preprocessed image](/ocr/fetch-preprocessed-image/) for information on how to get back the image with improved resolution.
-
-### cURL example
-
-{{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
-{{< tab tabNum="1" >}}
-```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostUpsamplingImageFile' \
---header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9....X6nACzTQF5OwG5fAuq3u65eyA5vw' \
---form 'file=@"/C:/source.png"'
-```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```
-a69d6a23-f3ae-43b7-9c6a-e30c4d4f8035
-```
-{{< /tab >}}
-{{< /tabs >}}
+- Increasing text size on medication guides or food labels.
+- Improving readability of small images or photos.

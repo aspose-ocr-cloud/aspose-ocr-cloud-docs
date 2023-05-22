@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-02-27"
+date: "2023-05-12"
 author: "Vladimir Lapin"
 type: docs
 url: /send-text-to-speech/
@@ -16,15 +16,17 @@ keywords:
 - send
 ---
 
-To read the text aloud, send a **POST** request to the `https://api.aspose.cloud/v5.0/ocr/TextToSpeech/PostTextToSpeech` Aspose.OCR Cloud REST API endpoint. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
+To read the text aloud, send a **POST** request to the `https://api.aspose.cloud/v5.0/ocr/converttexttospeech` Aspose.OCR Cloud REST API endpoint. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
 
 The text and conversion parameters are provided in JSON format in the request body.
 
 ```json
 {
 	"text": "Read this text aloud",
-	"language": "English",
-	"resultType": "Wav"
+	"settings": {
+		"language": "English",
+		"resultType": "Wav"
+	}
 }
 ```
 
@@ -58,14 +60,16 @@ The text-to-speech conversion will take a few seconds, depending on the amount o
 {{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/TextToSpeech/PostTextToSpeech' \
+curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/converttexttospeech' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...DpisWjfwe5RsfNCQ9Uh7Ig' \
 --data '{
 	"text": "Read this text aloud",
-	"language": "English",
-	"resultType": "Wav"
+	"settings": {
+		"language": "English",
+		"resultType": "Wav"
+	}
 }'
 ```
 {{< /tab >}}

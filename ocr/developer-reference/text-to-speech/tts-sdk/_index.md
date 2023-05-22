@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-02-27"
+date: "2023-05-12"
 author: "Vladimir Lapin"
 type: docs
 url: /tts-sdk/
@@ -37,14 +37,18 @@ namespace Example
 		static void Main(string[] args)
 		{
 			/** Authorize your requests to Aspose.OCR Cloud API */
-			TextToSpeechApi api = new TextToSpeechApi("<Client Id>", "<Client Secret>");
+			ConvertTextToSpeechApi api = new ConvertTextToSpeechApi("<Client Id>", "<Client Secret>");
 			/** Send text to TTS */
 			TTSBody source = new TTSBody {
-				Text = "Read this text aloud"
+				text: "Read this text aloud",
+				settings: new TTSSettings(
+					language: LanguageTTS.English,
+					resultType: ResultTypeTTS.Wav
+					)
 			};
-			string taskID = api.PostTextToSpeech(source);
+			string taskID = api.PostConvertTextToSpeech(source);
 			/** Save voice to file */
-			TTSResponse result = api.GetTextToSpeechResult(taskID);
+			TTSResponse result = api.GetConvertTextToSpeech(taskID);
 			byte[] voice = result.Results[0].Data;
 			File.WriteAllBytes("voice.wav", voice);
 		}

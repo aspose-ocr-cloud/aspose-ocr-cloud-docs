@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-03-01"
+date: "2023-05-11"
 author: "Vladimir Lapin"
 type: docs
 url: /dewarp-image/
@@ -79,33 +79,7 @@ Warped images are very hard to be processed by most OCR algorithms. Thus, image 
 	}
 </script>
 
-To straighten the curved image, send a **POST** request to the `https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostDewarpingFile` Aspose.OCR Cloud REST API endpoint. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
+## Usage scenarios
 
-The image is provided as a form data.
-
-## Return value
-
-If successful, the method returns a string with a unique identifier (GUID) of the dewarping request in the [queue](/ocr/recognition-workflow/).
-
-Otherwise, it returns a HTTP status code corresponding to the error.
-
-## What's next
-
-Dewarping will take a few seconds, depending on the image size and the current Aspose.Cloud load. See the article [Fetching preprocessed image](/ocr/fetch-preprocessed-image/) for information on how to get back the dewarped image.
-
-## cURL example
-
-{{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
-{{< tab tabNum="1" >}}
-```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostDewarpingFile' \
---header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...X6nACzTQF5OwG5fAuq3u65eyA5vw' \
---form 'file=@"/C:/source.png"'
-```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```
-4f33f2f5-37cc-4877-8361-808723bf45be
-```
-{{< /tab >}}
-{{< /tabs >}}
+- Straightening lines in curved pages.
+- Fixing geometric distortions on ultra-wide or fisheye photos.

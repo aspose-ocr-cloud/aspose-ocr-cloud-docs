@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-03-01"
+date: "2023-05-11"
 author: "Vladimir Lapin"
 type: docs
 url: /deskew-image/
@@ -71,12 +71,8 @@ When a page is fed to a flatbed scanner (mechanically or manually) or photograph
 
 Skew angle detection and image straightening is critical to the OCR process as it directly affects the reliability and efficiency of segmentation and text extraction. Aspose.OCR Cloud offers automated processing algorithms to correct image tilt (deskew).
 
-## Automatic skew correction
-
-To automatically straighten skewed image, send a **POST** request with the image file to the `https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostSkewCorrectionFile` Aspose.OCR Cloud REST API endpoint or enable `makeSkewCorrect` property in recognition settings.
-
 {{% alert color="primary" %}} 
-Automatic deskew works for images rotated 15 degrees or less. If the image is rotated by a larger degree or upside down, you must [manually specify the rotation angle](#manual-skew-correction).
+Automatic deskew works for images rotated 15 degrees or less. If the image is rotated by a larger degree or upside down, you must manually specify the rotation angle in recognition settings.
 {{% /alert %}}
 
 <div class="duo">
@@ -104,48 +100,9 @@ Automatic deskew works for images rotated 15 degrees or less. If the image is ro
 	}
 </script>
 
-### Using the recognition setting
-
-The `makeSkewCorrect` recognition setting is available for all image recognition methods. To automatically correct the image tilt during the recognition, simply set this option to `true`.
-
-While this greatly simplifies the code, you have no control over the intermediate results or the order in which the preprocessing filters are applied to the image.
-
-### Using the dedicated endpoint
-
-Posting an image to the Aspose.OCR Cloud endpoint `https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostSkewCorrectionFile` allows you to [fetch](/ocr/fetch-preprocessed-image/) a preprocessed image that can be handled by other preprocessing filters or recognized. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
-
-The image is provided as a form data.
-
-#### Return value
-
-If successful, `PostSkewCorrectionFile` method returns a string with a unique identifier (GUID) of the deskew request in the [queue](/ocr/recognition-workflow/).
-
-Otherwise, it returns a HTTP status code corresponding to the error.
-
-#### What's next
-
-Skew correction will take a few seconds, depending on the image size and the current Aspose.Cloud load. See the article [Fetching preprocessed image](/ocr/fetch-preprocessed-image/) for information on how to get back the straightened image.
-
-#### cURL example
-
-{{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
-{{< tab tabNum="1" >}}
-```bash
-curl --location 'https://api.aspose.cloud/v5.0/ocr/ImageProcessing/PostSkewCorrectionFile' \
---header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9....HMTd3btfrc91Q' \
---form 'file=@"/C:/source.png"'
-```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```
-713fc26d-86c0-46e8-b7e2-6420ecadb4e9
-```
-{{< /tab >}}
-{{< /tabs >}}
-
 ## Manual skew correction
 
-When the image is rotated by a significant angle or upside down, [automatic skew correction](#automatic-skew-correction) may not detect the correct angle.
+When the image is rotated by a significant angle or upside down, automatic skew correction may fail to detect the correct angle.
 
 To deal with such situations, you can manually specify the image rotation angle using the `rotate` recognition setting, which is available for all image recognition methods.
 
@@ -176,7 +133,11 @@ curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage
 {{< tab tabNum="2" >}}
 ```
 a197aade-bba9-4c7a-92c7-46851b3dceaa
-
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## Usage scenarios
+
+- Straightening skewed images.
+- Turning flipped images.

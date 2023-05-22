@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-02-27"
+date: "2023-05-12"
 author: "Vladimir Lapin"
 type: docs
 url: /fetch-voice/
@@ -26,12 +26,12 @@ When text is [submitted](/ocr/send-text-to-speech/) to be converted to speech, t
 
 This query can be useful if you want to have full control over the text-to-speech conversion results, such as checking for errors or monitoring the status of a conversion task.
 
-Send a **GET** request to the `https://api.aspose.cloud/v5.0/ocr/TextToSpeech/GetTextToSpeechResult` Aspose.OCR Cloud REST API endpoint. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
+Send a **GET** request to the `https://api.aspose.cloud/v5.0/ocr/converttexttospeech` Aspose.OCR Cloud REST API endpoint. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
 
 Provide the [unique identifier](/ocr/send-text-to-speech/#return-value) of the conversion task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/TextToSpeech/GetTextToSpeechResult?id=TTS01232-9d40-4f2d-8eda-f1fc0b12bce6' \
+curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/converttexttospeech?id=TTS01232-9d40-4f2d-8eda-f1fc0b12bce6' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...DpisWjfwe5RsfNCQ9Uh7Ig' \
@@ -77,20 +77,3 @@ Processing | The text is currently being converted to speech. | Fetch the result
 Completed | Text to speech conversion is finished. | Play or save the audio from `results` property.
 Error | An error occurred during conversion. | Check messages in the `error` property for more information.
 NotExist | The request with the specified ID does not exist, or the result has already been deleted from the cloud storage. | Check the ID or [send the text for conversion](/ocr/send-text-to-speech/) again with the same parameters.
-
-## Fetching audio file
-
-This query can be useful if you just want to read text aloud on a website or in app without focusing on technical details.
-
-Send a **GET** request to the `https://api.aspose.cloud/v5.0/ocr/TextToSpeech/GetTextToSpeechResultFile` Aspose.OCR Cloud REST API endpoint. To authorize the request, pass the [access token](/ocr/authorization/) in **Authorization** header (_Bearer authentication_).
-
-Provide the [unique identifier](/ocr/send-text-to-speech/#return-value) of the conversion task in `id` parameter:
-
-```bash
-curl --location 'https://api.aspose.cloud/v5.0/ocr/TextToSpeech/GetTextToSpeechResultFile?id=TTSdcbdb-c6d5-4299-ba91-e46245a1c8d7' \
---header 'Accept: text/plain' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...DpisWjfwe5RsfNCQ9Uh7Ig' \
-```
-
-The voice is returned as an audio file (_audio/wav_).
