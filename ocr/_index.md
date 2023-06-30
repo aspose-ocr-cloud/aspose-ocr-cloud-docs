@@ -37,5 +37,5 @@ Even the complex recognition tasks can be done with a couple of API calls. You d
   Master Aspose.OCR Cloud API and and build your own cross-platform OCR applications.
 - [How-to's](/ocr/how-to/)  
   Find answers to the most common questions you may have when using Aspose.OCR Cloud.
-- [Release Notes](https://releases.aspose.cloud/ocr/release-notes/)  
+- [Release Notes](/ocr/release-notes/)  
   Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR Cloud.
