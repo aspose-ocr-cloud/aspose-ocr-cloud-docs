@@ -26,7 +26,7 @@ When an image is [submitted](/ocr/send-for-detection/) for region detection, it 
 Provide the [unique identifier](/ocr/send-for-detection/#return-value) of the region detection task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/DetectRegions?id=a371d027-4b0d-4d86-8825-c8d818dd4ed9' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/DetectRegions?id=a371d027-4b0d-4d86-8825-c8d818dd4ed9' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...VhKdGWxrJHdPr-OiTRL6-A' \

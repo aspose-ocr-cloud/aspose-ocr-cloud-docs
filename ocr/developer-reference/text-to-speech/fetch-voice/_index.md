@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-05-12"
+date: "2023-11-22"
 author: "Vladimir Lapin"
 type: docs
 url: /fetch-voice/
@@ -31,7 +31,7 @@ Send a **GET** request to the `https://api.aspose.cloud/v5.0/ocr/converttexttosp
 Provide the [unique identifier](/ocr/send-text-to-speech/#return-value) of the conversion task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/converttexttospeech?id=TTS01232-9d40-4f2d-8eda-f1fc0b12bce6' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/converttexttospeech?id=TTS01232-9d40-4f2d-8eda-f1fc0b12bce6' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...DpisWjfwe5RsfNCQ9Uh7Ig' \
@@ -65,6 +65,12 @@ Property | Type | Description
 `responseStatusCode` | string | Conversion response status.
 `results` | array | Audio file. The audio is returned as a Base64 encoded string. You must decode it in order to play it or save it to a file.
 `error/messages` | string[] | Conversion error messages, if any. Even if the conversion succeed, you can still get notifications and warnings about non-fatal errors.
+
+## Evaluation mode
+
+To get the generated voice from [evaluation](/ocr/send-text-to-speech/#evaluation-mode) request, send a GET request to the endpoint `https://api.aspose.cloud/v5.0/ocr/ConvertTextToSpeechTrial?id={request ID}`.
+
+This endpoint does not use the **Authorization** header, so there is no need to generate an access token.
 
 ### Task statuses
 

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-12"
+date: "2023-11-22"
 author: "Vladimir Lapin"
 type: docs
 url: /send-text-to-speech/
@@ -29,6 +29,12 @@ The text and conversion parameters are provided in JSON format in the request bo
 	}
 }
 ```
+
+## Evaluation mode
+
+To use Aspose.OCR Cloud TTS conversion in [evaluation mode](/ocr/subscription/#evaluation-tier), send a **POST** request to the endpoint `https://api.aspose.cloud/v5.0/ocr/ConvertTextToSpeechTrial`.
+
+This endpoint does not use the **Authorization** header, so there is no need to generate an access token. All settings remain the same as in regular text TTS requests.
 
 ## Providing a text
 
@@ -60,7 +66,7 @@ The text-to-speech conversion will take a few seconds, depending on the amount o
 {{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/converttexttospeech' \
+curl --request POST --location 'https://api.aspose.cloud/v5.0/ocr/converttexttospeech' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...DpisWjfwe5RsfNCQ9Uh7Ig' \

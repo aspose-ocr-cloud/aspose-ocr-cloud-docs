@@ -24,7 +24,7 @@ When a PDF file is [submitted](/ocr/send-pdf-for-recognition/) for recognition, 
 Provide the [unique identifier](/ocr/send-pdf-for-recognition/#return-value) of the PDF recognition task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/RecognizePdf?id=db03b9ea-3eed-4954-a1d4-b2712773bbe' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/RecognizePdf?id=db03b9ea-3eed-4954-a1d4-b2712773bbe' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

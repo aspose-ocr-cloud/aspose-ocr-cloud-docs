@@ -50,7 +50,7 @@ To obtain a JWT token, get the _Client ID_ and _Client Secret_ credentials:
 Now request an access token with the following API call:
 
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/connect/token' \
+curl --request POST --location 'https://api.aspose.cloud/connect/token' \
      --header 'Content-Type: application/x-www-form-urlencoded' \
      --data-urlencode 'grant_type=client_credentials' \
      --data-urlencode 'client_id=CLIENT-ID-VALUE' \
@@ -87,7 +87,7 @@ An image sent to the Aspose.OCR Cloud REST API must be Base64 encoded. You can u
 Make the following API call:
 
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage' \
+curl --request POST --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \
@@ -117,7 +117,7 @@ Wait a moment. The request will be placed in the queue and you will get its uniq
 Recognition will take a second or two, depending on the size of the image and the current Aspose.Cloud load. After the recognition is completed, the result can be obtained using the following API call:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage?id=48d50d5b-8ec3-4a8b-8403-e8cfa976f3ad' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage?id=48d50d5b-8ec3-4a8b-8403-e8cfa976f3ad' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

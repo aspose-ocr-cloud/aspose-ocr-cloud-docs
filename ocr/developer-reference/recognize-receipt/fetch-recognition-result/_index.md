@@ -25,7 +25,7 @@ When a receipt is [submitted](/ocr/send-receipt-for-recognition/) for recognitio
 Provide the [unique identifier](/ocr/send-receipt-for-recognition/#return-value) of the recognition task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/RecognizeReceipt?id=3f030db3-de56-4acb-8469-d696be9dc9a2' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeReceipt?id=3f030db3-de56-4acb-8469-d696be9dc9a2' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

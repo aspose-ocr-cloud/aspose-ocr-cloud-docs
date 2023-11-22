@@ -27,7 +27,7 @@ When a label is [submitted](/ocr/send-label-for-recognition/) for recognition, i
 Provide the [unique identifier](/ocr/send-label-for-recognition/#return-value) of the recognition task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/RecognizeLabel?id=c4b60313-4f78-45f8-b708-069eb98dc22e' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeLabel?id=c4b60313-4f78-45f8-b708-069eb98dc22e' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

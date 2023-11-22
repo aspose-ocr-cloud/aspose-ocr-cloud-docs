@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-07-12"
+date: "2023-11-22"
 author: "Vladimir Lapin"
 type: docs
 url: /subscription/
@@ -22,6 +22,16 @@ keywords:
 ---
 
 Aspose.OCR Cloud is an on-demand service with a free tier. You must [register](/ocr/sign-up/) with **Aspose Cloud API** to access the optical character recognition features.
+
+## Evaluation tier
+
+You can try Aspose.OCR Cloud without subscribing for a paid plan and even without creating an account at Aspose Cloud API. The following APIs are available for free:
+
+Method | Limitations
+------ | -----------
+[Text to speech conversion](/ocr/text-to-speech/) | <ul><li>**10** API calls per day from a single IP address.</li><li>The text size must not exceed **500** characters, including spaces and punctuation.</li><li>The phrase _"Please authenticate to the API to remove this message"_ is inserted at a random position within the generated audio.</li></ul>
+
+If you have already hit the limits or need access to other methods, consider the [free tier](#free-tier) or [paid subscription plan](#paid-plans).
 
 ## Free tier
 

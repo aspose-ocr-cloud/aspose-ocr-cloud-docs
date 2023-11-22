@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-02-01"
+date: "2023-11-22"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-workflow/
@@ -46,6 +46,8 @@ To authorize your request, pass the [access token](/ocr/authorization/) in _Auth
 {{% alert color="primary" %}} 
 If you are using [Aspose.OCR Cloud SDK](/ocr/available-sdks/), it will handle all authorization routines.
 {{% /alert %}} 
+
+It is also possible to get the request status by sending the **GET** request to `https://api.aspose.cloud/v5.0/ocr/Utilities/GetTaskStatus` endpoint with the unique identifier of the task in `id` query string parameter. This method does not return the results, allowing you to save the resources and traffic.
 
 ## 4. Process the recognition result
 

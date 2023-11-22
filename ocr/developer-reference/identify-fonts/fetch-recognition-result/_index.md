@@ -25,7 +25,7 @@ When an image is [submitted](/ocr/send-image-for-font-identification/) for font 
 Provide the [unique identifier](/ocr/send-image-for-font-identification/#return-value) of the font identification task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/IdentifyFont?id=c11c975d-5124-4555-9561-af40fb95ba07' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/IdentifyFont?id=c11c975d-5124-4555-9561-af40fb95ba07' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

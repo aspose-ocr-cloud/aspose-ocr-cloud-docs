@@ -76,7 +76,7 @@ Recognition will take a few seconds, depending on the size of the photo and the 
 {{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/RecognizeLabel' \
+curl --request POST --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeLabel' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

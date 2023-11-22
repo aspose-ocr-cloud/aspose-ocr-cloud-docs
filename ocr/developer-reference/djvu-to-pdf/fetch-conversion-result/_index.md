@@ -23,7 +23,7 @@ When a DjVu file is [submitted](/ocr/send-djvu-for-conversion/) for conversion, 
 Provide the [unique identifier](/ocr/send-djvu-for-conversion/#return-value) of the conversion task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/djvu2pdf?id=c4b60313-4f78-45f8-b708-069eb98dc22e' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/djvu2pdf?id=c4b60313-4f78-45f8-b708-069eb98dc22e' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

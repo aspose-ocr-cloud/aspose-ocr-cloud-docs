@@ -28,7 +28,7 @@ You cannot get the preprocessed image as a file.
 {{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage' \
+curl --request POST --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeImage' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

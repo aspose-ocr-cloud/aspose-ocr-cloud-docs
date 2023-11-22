@@ -25,7 +25,7 @@ When image regions are [submitted](/ocr/send-image-regions-for-recognition/) for
 Provide the [unique identifier](/ocr/send-image-regions-for-recognition/#return-value) of the region recognition task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/RecognizeRegions?id=2ce30237-86da-41ef-88e9-84f0b7acffc0' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/RecognizeRegions?id=2ce30237-86da-41ef-88e9-84f0b7acffc0' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...Ly6HFO2W3iuX5XvtpjVA5FtYA' \

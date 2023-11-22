@@ -40,7 +40,7 @@ Conversion will take a few seconds, depending on the size of the image and the c
 {{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v5.0/ocr/djvu2pdf' \
+curl --request POST --location 'https://api.aspose.cloud/v5.0/ocr/djvu2pdf' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \

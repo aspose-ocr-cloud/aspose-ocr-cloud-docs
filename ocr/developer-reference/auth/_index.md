@@ -48,7 +48,7 @@ Now request an access token by sending the **POST** request to `https://api.aspo
 {{< tabs tabID="1" tabTotal="2" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/connect/token' \
+curl --request POST --location 'https://api.aspose.cloud/connect/token' \
      --header 'Content-Type: application/x-www-form-urlencoded' \
      --data-urlencode 'grant_type=client_credentials' \
      --data-urlencode 'client_id=CLIENT-ID-VALUE' \
@@ -73,7 +73,7 @@ The access token is returned in `access_token` property of the response JSON and
 To authorize your requests to Aspose.OCR Cloud API, pass the access token in **Authorization** header of each request (_Bearer authentication_):
 
 ```bash
-curl --location --request POST 'https://api.aspose.cloud/v3.0/ocr/recognize' \
+curl --request POST --location 'https://api.aspose.cloud/v3.0/ocr/recognize' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...l8v7jUV-mLjEdQ'
 ```
 

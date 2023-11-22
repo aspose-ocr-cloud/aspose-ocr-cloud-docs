@@ -30,7 +30,7 @@ To obtain the resized image, send a **GET** request to the `https://api.aspose.c
 Provide the [unique identifier](/ocr/send-image-for-upsampling/#return-value) of the upsampling task in `id` parameter:
 
 ```bash
-curl --location --request GET 'https://api.aspose.cloud/v5.0/ocr/upscaleimage?id=c4b60313-4f78-45f8-b708-069eb98dc22e' \
+curl --request GET --location 'https://api.aspose.cloud/v5.0/ocr/upscaleimage?id=c4b60313-4f78-45f8-b708-069eb98dc22e' \
 --header 'Accept: text/plain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...HaRYOxBcCRCPLnrFCVXpw7UA' \
