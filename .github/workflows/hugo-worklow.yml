@@ -2,7 +2,7 @@ name: Hugo-CI
 on:
   push:
     branches: [master]
-    paths-ignore: ".github/**"
+    # paths-ignore: ".github/**"
 
 jobs:
   job-one:
