@@ -2,7 +2,7 @@ name: Hugo-CI
 on:
   push:
     branches: [master]
-    # paths-ignore: ".github/**"
+    paths-ignore: ".github/**"
 
 jobs:
   job-one:
@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: hugo build
         run: |
-          mkdir aspose-ocr-cloud-docs
           git clone https://github.com/aspose-ocr-cloud/aspose-ocr-cloud-docs.git || (cd aspose-ocr-cloud-docs && git pull)
           git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
           cd lutsk-aspose-prototype
