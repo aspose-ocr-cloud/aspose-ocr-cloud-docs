@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-06-27"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /send-label-for-recognition/

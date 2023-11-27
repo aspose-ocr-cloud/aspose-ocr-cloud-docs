@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-03-01"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /upsample-image/

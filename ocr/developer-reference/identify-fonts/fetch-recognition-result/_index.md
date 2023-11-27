@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-06-27"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /fetch-font-identification-result/

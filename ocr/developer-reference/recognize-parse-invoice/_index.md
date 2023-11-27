@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-11-03"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /recognize-parse-invoice/

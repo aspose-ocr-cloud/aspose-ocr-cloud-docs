@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-11-03"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /send-invoice-for-recognition/

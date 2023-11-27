@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-11-22"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-workflow/

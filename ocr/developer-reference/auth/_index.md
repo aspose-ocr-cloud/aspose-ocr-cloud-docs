@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-02-01"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /authorization/

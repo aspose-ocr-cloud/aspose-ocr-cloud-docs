@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-05-11"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /binarize-image/

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-05-12"
+date: "2023-11-27"
 author: "Vladimir Lapin"
 type: docs
 url: /fetch-djvu-conversion-result/
