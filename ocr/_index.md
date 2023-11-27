@@ -18,7 +18,6 @@ keywords:
 ---
 
 {{% alert color="primary" %}}
-
 ![Aspose.OCR Cloud](aspose-ocr-cloud.png)
 
 Aspose.OCR Cloud is an optical character recognition as a service. With it, you can easily add OCR functionality to almost any device or platform, including netbooks, mini PCs, or even entry-level smartphones. All resource-intensive tasks run on highly reliable and high performance GPU-based Amazon servers, ensuring the fastest possible speed regardless of the number of requests.
@@ -26,7 +25,6 @@ Aspose.OCR Cloud is an optical character recognition as a service. With it, you 
 Our engine can read text from images, photos, screenshots, and scanned PDFs in a large number of European, Cyrillic and Eastern scripts, returning results in the most popular document formats. Powerful built-in image pre-processing filters based on neural networks automatically correct rotated and skewed images, and automatically remove dirt, spots, scratches, glare, unwanted gradients, and other image defects that may affect recognition accuracy. To further improve results, Aspose.OCR Cloud has a built-in spell checker that automatically replaces misspelled words and frees you from having to manually correct the recognition results.
 
 Even the complex recognition tasks can be done with a couple of API calls. You do not need to install any software to use our OCR cloud services. Just use cURL commands or combine them into scripts for complex tasks. You can also use third party REST API tools like Postman.
-
 {{% /alert %}}
 
 - [Product overview](/ocr/product-overview/)  
