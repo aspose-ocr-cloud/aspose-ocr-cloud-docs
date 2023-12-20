@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-11-27"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /subscription/
@@ -29,6 +29,7 @@ You can try Aspose.OCR Cloud without subscribing for a paid plan and even withou
 
 Method | Limitations
 ------ | -----------
+[Image recognition](/ocr/recognize-image/) | **10%** of the words in recognition results are substituted with asterisks (`*`). The sequence of masked words remains unchanged upon re-submitting the identical image for recognition.
 [Text to speech conversion](/ocr/text-to-speech/) | <ul><li>**10** API calls per day from a single IP address.</li><li>The text size must not exceed **500** characters, including spaces and punctuation.</li><li>The phrase _"Please authenticate to the API to remove this message"_ is inserted at a random position within the generated audio.</li></ul>
 
 If you have already hit the limits or need access to other methods, consider the [free tier](#free-tier) or [paid subscription plan](#paid-plans).

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-11-27"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /send-image-for-recognition/
@@ -38,6 +38,12 @@ The image and recognition parameters are provided in JSON format in the request 
   }
 }
 ```
+
+## Evaluation mode
+
+To use Aspose.OCR Cloud image recognition in [evaluation mode](/ocr/subscription/#evaluation-tier), send a POST request to the endpoint `https://api.aspose.cloud/v5.0/ocr/RecognizeImageTrial`.
+
+This endpoint does not use the **Authorization** header, so there is no need to generate an access token. All settings remain the same as in regular image recognition requests.
 
 ## Providing an image
 

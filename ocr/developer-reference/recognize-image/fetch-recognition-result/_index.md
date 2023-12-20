@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-11-27"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /fetch-image-recognition-result/
@@ -61,6 +61,16 @@ Property | Type | Description
 `responseStatusCode` | string | Recognition response status.
 `results` | array | [Recognition results](/ocr/result-format/) (depend on the `resultType` property of the recognition task).<br />All results (including plain text) are returned as Base64 encoded strings. You must decode them to display on the screen or save to a file.
 `error/messages` | string[] | Recognition error messages, if any.<br />Even if the image is recognized, you can still get notifications and warnings about non-fatal recognition errors.
+
+## Evaluation mode
+
+To fetch the recognition result from [evaluation](/ocr/send-image-for-recognition/#evaluation-mode) request, send a GET request to the endpoint `https://api.aspose.cloud/v5.0/ocr/RecognizeImageTrial?id={request ID}`.
+
+This endpoint does not use the **Authorization** header, so there is no need to generate an access token.
+
+{{% alert color="caution" %}}
+**10%** of the words in recognition results will be substituted with asterisks (`*`). The sequence of masked words remains unchanged upon [re-submitting](/ocr/send-image-for-recognition/#evaluation-mode) the identical image for recognition.
+{{% /alert %}}
 
 ## Task statuses
 
