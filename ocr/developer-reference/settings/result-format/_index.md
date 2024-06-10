@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-11-27"
+date: "2024-06-10"
 author: "Vladimir Lapin"
 type: docs
 url: /result-format/
@@ -24,10 +24,18 @@ Format | REST API setting | Applies to
 Plain text | `"resultType": "Text"`<br />`"resultTypeTable": "Text"`<br />`"resultType": "TextAndPdf"`<br />`"resultType": "TextAndHocr"`<br />`"resultType": "TextAndPdfAndHocr"` | [Image recognition](/ocr/recognize-image/)<br />[PDF recognition](/ocr/recognize-pdf/)<br />[Receipt recognition](/ocr/recognize-receipt/)<br />[Table recognition](/ocr/recognize-table/)<br />[Regions recognition](/ocr/recognize-regions/)
 PDF | `"resultType": "Pdf"`<br />`"resultType": "TextAndPdf"`<br />`"resultType": "PdfAndHocr"`<br />`"resultType": "TextAndPdfAndHocr"` | [Image recognition](/ocr/recognize-image/)<br />[PDF recognition](/ocr/recognize-pdf/)<br />[Receipt recognition](/ocr/recognize-receipt/)<br />[Regions recognition](/ocr/recognize-regions/)
 hOCR | `"resultType": "Hocr"`<br />`"resultType": "TextAndHocr"`<br />`"resultType": "PdfAndHocr"`<br />`"resultType": "TextAndPdfAndHocr"` | [Image recognition](/ocr/recognize-image/)<br />[PDF recognition](/ocr/recognize-pdf/)<br />[Receipt recognition](/ocr/recognize-receipt/)<br />[Regions recognition](/ocr/recognize-regions/)
+JSON | `"resultType": "JSON"` | [Image recognition](/ocr/recognize-image/)<br />[PDF recognition](/ocr/recognize-pdf/)<br />[Receipt recognition](/ocr/recognize-receipt/)<br />[Table recognition](/ocr/recognize-table/)
 Excel | `"resultType": "Excel"`<br />`"resultTypeTable": "CsvAndExcel"` | [Table recognition](/ocr/recognize-table/)
 CSV | `"resultType": "Csv"`<br />`"resultTypeTable": "CsvAndExcel"` | [Table recognition](/ocr/recognize-table/)
 WAV | `"resultType": "Wav"` | [Text to speech conversion](/ocr/text-to-speech/)
 PNG | `"resultType": "ImagePNG"` | [Image preprocessing](/ocr/preprocess-image/)
+
+## Returning recognition result as JSON
+
+When the recognition result is returned as JSON, the resulting file will contain the array of all content block found in the image and the recognized text found in the block:
+
+- The coordinates of the top left and bottom right corners of the content block.
+- The recognized text (plain text string).
 
 ## Important considerations
 
