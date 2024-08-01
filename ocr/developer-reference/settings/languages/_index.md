@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-11-27"
+date: "2024-08-01"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-languages/
@@ -17,56 +17,156 @@ keywords:
 - character
 ---
 
-Aspose.OCR Cloud can work with texts in one of 48 languages and supports handwriting. By default, the text is considered to be in _English_.
+Aspose.OCR Cloud can work with texts in one of 140 languages and supports handwriting. By default, the text is considered to be in _English_.
 
 Language | OCR | TTS | Spell check | REST API
 -------- | --- | --- | ----------- | --------
-Albanian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Albanian"`
-Arabic | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Arabic"`
-Azerbaijani | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Azerbaijani"`
-Belorussian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Belorussian"`
-Bengali | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Bengali"`
-Bulgarian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Bulgarian"`
-Chinese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Chinese"`
-Croatian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Croatian"`
-Czech | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Czech"`
-Danish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Danish"`
-Dutch | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Netherlands"`
-English | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | `"language": "English"`
-_Handwritten English_ | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | `"language": "HWT_eng"`
-Estonian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Estonian"`
-Finnish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Finnish"`
-French | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "French"`
-Georgian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Georgian"`
-German | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "German"`
-Greek | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Greek"`
-Hebrew | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Hebrew"`
-Hindi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Hindi"`
-Indonesian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Indonesian"`
-Italian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Italian"`
-Japanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Japanese"`
-Javanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Javanese"`
-Kazakh | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Kazah"`
-Korean | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Korean"`
-Latin | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Latin"`
-Latvian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Latvian"`
-Lithuanian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Lithuanian"`
-Macedonian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Macedonian"`
-Norwegian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Norwegian"`
-Persian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Persian"`
-Polish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Polish"`
-Portuguese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Portuguese"`
-Romanian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Romanian"`
-Russian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Russian"`
-Serbian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Serbian"`
-Slovak | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Slovak"`
-Slovene | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Slovene"`
-Spanish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Spanish"`
-Swedish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | `"language": "Swedish"`
-Thai | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Thai"`
-Tibetan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Tibetan"`
-Turkish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Turkish"`
-Ukrainian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Ukrainian"`
-Urdu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Urdu"`
-Uzbek | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Uzbek"`
-Vietnamese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | `"language": "Vietnamese"`
+Afrikaans | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Afrikaans"
+Albanian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Albanian"
+Arabic | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Arabic"
+Awadhi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Awadhi"
+Azerbaijani | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Azerbaijani"
+Belorussian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Belorussian"
+Bemba | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bemba"
+Bengali | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bengali"
+Betawi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Betawi"
+Bhojpuri | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bhojpuri"
+Bikol | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bikol"
+Bosnian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bosnian"
+Bouyei | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bouyei"
+Bulgarian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Bulgarian"
+Cantonese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Cantonese"
+Catalan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Catalan"
+Cebuano | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Cebuano"
+Chattisgarhi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Chattisgarhi"
+Chechen | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Chechen"
+Chichewa | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Chichewa"
+Chinese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Chinese"
+Croatian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Croatian"
+Czech | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Czech"
+Danish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Danish"
+Dhundari | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Dhundari"
+Dimli | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Dimli"
+Dong | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Dong"
+Dutch | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Dutch"
+English | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | "language": "English"
+_Handwritten English_ | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | <span style="color:#28a745">Yes</span> | "language": "HWT_ENG"
+Estonian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Estonian"
+Finnish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Finnish"
+French | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "French"
+Galician | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Galician"
+Gan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Gan"
+Garhwali | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Garhwali"
+Georgian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Georgian"
+German | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "German"
+Gilaki | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Gilaki"
+Greek | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Greek"
+Gusii | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Gusii"
+Hakka | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hakka"
+Haryanvi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Haryanvi"
+Hausa | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hausa"
+Hebrew | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hebrew"
+Hiligaynon | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hiligaynon"
+Hindi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hindi"
+Hmong | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hmong"
+Hungarian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Hungarian"
+Ilocano | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Ilocano"
+Indonesian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Indonesian"
+Italian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Italian"
+Japanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Japanese"
+Javanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Javanese"
+Kabardian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kabardian"
+Kanauji | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kanauji"
+Kanuri | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kanuri"
+Kapampangan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kapampangan"
+Kazah | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kazah"
+Kiche | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kiche"
+Kikongo | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kikongo"
+Konkani | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Konkani"
+Korean | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Korean"
+Kumauni | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kumauni"
+Kurdish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kurdish"
+Lamani | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Lamani"
+Latin | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Latin"
+Latvian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Latvian"
+Lithuanian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Lithuanian"
+Low German | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Low_German"
+Luguru | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Luguru"
+Luo | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Luo"
+Macedonian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Macedonian"
+Magahi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Magahi"
+Maithili | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Maithili"
+Makassar | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Makassar"
+Makua | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Makua"
+Malagasy | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Malagasy"
+Malay | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Malay"
+Malvi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Malvi"
+Marathi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Marathi"
+Marwari | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Marwari"
+Meru | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Meru"
+Mewari | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Mewari"
+Mewati | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Mewati"
+Min Bei | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Min_Bei"
+Min Dong | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Min_Dong"
+Min Nan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Min_Nan"
+Minangkabau | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Minangkabau"
+Muong | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Muong"
+Musi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Musi"
+Nandi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Nandi"
+Ndebele | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Ndebele"
+Nepali | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Nepali"
+Netherlands | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Netherlands"
+Norwegian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Norwegian"
+Occitan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Occitan"
+Oromo | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Oromo"
+Palembang | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Palembang"
+Pangasinan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Pangasinan"
+Persian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Persian"
+Polish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Polish"
+Portuguese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Portuguese"
+Pu-Xian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Pu_Xian"
+Quechua | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Quechua"
+Rajbanshi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Rajbanshi"
+Romanian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Romanian"
+Russian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Russian"
+Rwanda | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Rwanda"
+Sasak | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Sasak"
+Serbian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Serbian"
+Serbo-Croatian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Serbo_Croatian"
+Serer-Sine | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Serer_Sine"
+Shona | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Shona"
+Slovak | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Slovak"
+Slovene | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Slovene"
+Somali | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Somali"
+Sotho (Northern) | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Sotho_Northern"
+Sotho (Southern) | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Sotho_Southern"
+Spanish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Spanish"
+Sukuma | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Sukuma"
+Sundanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Sundanese"
+Swahili | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Swahili"
+Swati | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Swati"
+Swedish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Swedish"
+Tagalog | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tagalog"
+Thai | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Thai"
+Tibetan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tibetan"
+Tonga | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tonga"
+Tsonga | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tsonga"
+Tswana | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tswana"
+Tumbuka | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tumbuka"
+Turkish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Turkish"
+Turkmen | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Turkmen"
+Ukrainan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Ukrainan"
+Umbundu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Umbundu"
+Urdu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Urdu"
+Uzbek | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Uzbek"
+Vietnamese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Vietnamese"
+Wagdi | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Wagdi"
+Waray-Waray | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Waray_Waray"
+Wolaytta | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Wolaytta"
+Wu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Wu"
+Xhosa | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Xhosa"
+Xiang | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Xiang"
+Yao | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Yao"
+Yoruba | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Yoruba"
+Zhuang | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Zhuang"
+Zulu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Zulu"
