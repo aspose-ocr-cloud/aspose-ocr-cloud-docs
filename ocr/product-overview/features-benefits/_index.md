@@ -15,7 +15,7 @@ keywords:
 
 Aspose.OCR Cloud offers a wide range of benefits for projects of any size.
 
-- **140 recognition languages**  
+- **140+ recognition languages**  
   Aspose.OCR Cloud neural networks are trained in a [large number](/ocr/recognition-languages/) of European, Cyrillic, Indian and Oriental languages, including Arabic and Chinese. This makes it a truly universal solution applicable to companies of any size in almost any region of the world.
 - **Read photos and low-quality scans**  
   Built-in image pre-processing filters intelligently improve image resolution, correct rotated, skewed and distorted images, automatically remove dirt, spots, scratches, glare, unwanted gradients, and other image defects. It allows for reliable recognition of any image, including smartphone photos. Most of the pre-processing and image correction is done automatically, so you will only have to intervene in difficult cases.

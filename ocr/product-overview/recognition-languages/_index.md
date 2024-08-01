@@ -15,7 +15,7 @@ keywords:
 - symbols
 ---
 
-Aspose.OCR Cloud can recognize **140** languages, including handwritten scripts.
+Aspose.OCR Cloud can recognize **140+** languages, including handwritten scripts.
 
 ## Worldwide
 

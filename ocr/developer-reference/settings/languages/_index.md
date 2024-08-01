@@ -17,7 +17,7 @@ keywords:
 - character
 ---
 
-Aspose.OCR Cloud can work with texts in one of 140 languages and supports handwriting. By default, the text is considered to be in _English_.
+Aspose.OCR Cloud can work with texts in one of 140+ languages and supports handwriting. By default, the text is considered to be in _English_.
 
 Language | OCR | TTS | Spell check | REST API
 -------- | --- | --- | ----------- | --------
