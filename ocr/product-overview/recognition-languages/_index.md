@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-08-01"
+date: "2024-11-11"
 author: "Vladimir Lapin"
 type: docs
 url: /recognition-languages/
@@ -68,7 +68,7 @@ Aspose.OCR Cloud can recognize **140+** languages, including handwritten scripts
 - Azerbaijani (Azeri)
 - Kazakh
 - Turkmen
-- Uyghur
+- Uyghur (mixed texts in Uyghur and English are also supported)
 
 ## East Asia
 
@@ -77,8 +77,8 @@ Aspose.OCR Cloud can recognize **140+** languages, including handwritten scripts
 - Gan
 - Hakka
 - Hmong
-- Japanese
-- Korean
+- Japanese (mixed texts in Japanese and English are also supported)
+- Korean (mixed texts in Korean and English are also supported)
 - Mandarin (Chinese)
 - Min Bei
 - Min Dong
@@ -95,11 +95,13 @@ Aspose.OCR Cloud can recognize **140+** languages, including handwritten scripts
 - Bengali
 - Bhojpuri
 - Chattisgarhi (Laria, Khaltahi)
+- Devanagari-based languages (universal)
 - Dhundari
 - Garhwali
 - Haryanvi
 - Hindi
 - Kanauji
+- Kannada (mixed texts in Kannada and English are also supported)
 - Konkani
 - Kumauni
 - Lamani (Lambadi)
@@ -112,8 +114,10 @@ Aspose.OCR Cloud can recognize **140+** languages, including handwritten scripts
 - Mewati
 - Nepali
 - Rajbanshi
+- Tamil (mixed texts in Tamil and English are also supported)
+- Telugu (mixed texts in Telugu and English are also supported)
 - Thai
-- Urdu
+- Urdu (mixed texts in Telugu and English are also supported)
 - Wagdi
 
 ## Southeast Asia
@@ -146,7 +150,7 @@ Aspose.OCR Cloud can recognize **140+** languages, including handwritten scripts
 - Gilaki
 - Hebrew
 - Kurdish (Kurmanji)
-- Persian (Farsi)
+- Persian (mixed texts in Persian and English are also supported)
 
 ## Africa
 

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-08-01"
+date: "2024-11-11"
 author: "Vladimir Lapin"
 type: docs
 url: /supported-languages/
@@ -45,6 +45,7 @@ Chinese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">N
 Croatian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Croatian"
 Czech | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Czech"
 Danish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Danish"
+_Devanagari (universal)_ | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Devanagari"
 Dhundari | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Dhundari"
 Dimli | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Dimli"
 Dong | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Dong"
@@ -77,6 +78,7 @@ Japanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">
 Javanese | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Javanese"
 Kabardian | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kabardian"
 Kanauji | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kanauji"
+Kannada | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kannada"
 Kanuri | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kanuri"
 Kapampangan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kapampangan"
 Kazah | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Kazah"
@@ -147,6 +149,8 @@ Swahili | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">N
 Swati | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Swati"
 Swedish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#28a745">Yes</span> | "language": "Swedish"
 Tagalog | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tagalog"
+Tamil | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tamil"
+Telugu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Telugu"
 Thai | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Thai"
 Tibetan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tibetan"
 Tonga | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tonga"
@@ -155,6 +159,7 @@ Tswana | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No
 Tumbuka | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Tumbuka"
 Turkish | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Turkish"
 Turkmen | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Turkmen"
+Uyghur | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Uyghur"
 Ukrainan | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Ukrainan"
 Umbundu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Umbundu"
 Urdu | <span style="color:#28a745">Yes</span> | <span style="color:#ed6a5a">No</span> | <span style="color:#ed6a5a">No</span> | "language": "Urdu"
